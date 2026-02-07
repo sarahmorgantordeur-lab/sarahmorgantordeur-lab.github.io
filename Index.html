@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Tordeur | D&eacute;veloppeur Full Stack</title>
+    <meta name="description" content="Portfolio de Sarah Tordeur, d&eacute;veloppeur Full Stack Junior bas&eacute;e &agrave; Mons, Belgique.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">&lt;ST /&gt;</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">A propos</a></li>
+                <li><a href="#skills" class="nav-link">Comp&eacute;tences</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#education" class="nav-link">Formations</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">Bonjour, je suis</p>
+            <h1 class="hero-name">Sarah <span class="accent">Tordeur</span></h1>
+            <h2 class="hero-title">D&eacute;veloppeur Full Stack</h2>
+            <p class="hero-description">
+                Passionn&eacute;e par le d&eacute;veloppement web, je con&ccedil;ois des applications
+                compl&egrave;tes du frontend au backend. Bas&eacute;e &agrave; Mons, Belgique.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-outline">Me contacter</a>
+            </div>
+            <div class="hero-tech-line">
+                <span>PHP</span><span>JavaScript</span><span>Python</span><span>SQL</span><span>Node.js</span><span>Docker</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">A propos de <span class="accent">moi</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        Jeune d&eacute;veloppeur Full Stack motiv&eacute;e et d&eacute;termin&eacute;e, issue d'un parcours riche
+                        alliant math&eacute;matiques, sciences de l'&eacute;ducation et d&eacute;veloppement web. Ma capacit&eacute;
+                        d'apprentissage rapide et ma pers&eacute;v&eacute;rance me permettent de relever chaque nouveau d&eacute;fi
+                        avec passion.
+                    </p>
+                    <p>
+                        Form&eacute;e chez Technocit&eacute; en d&eacute;veloppement Full Stack, je ma&icirc;trise l'ensemble de la cha&icirc;ne
+                        de cr&eacute;ation web : du frontend (HTML, CSS, JavaScript, Tailwind) au backend (PHP, Python, Node.js),
+                        en passant par les bases de donn&eacute;es (SQL, MongoDB, SQLite) et les outils DevOps (Docker, Git).
+                    </p>
+                    <p>
+                        Mon exp&eacute;rience pass&eacute;e en tant qu'enseignante en math&eacute;matiques m'a dot&eacute;e d'excellentes
+                        comp&eacute;tences en communication, en p&eacute;dagogie et en r&eacute;solution de probl&egrave;mes &mdash; des atouts
+                        pr&eacute;cieux dans le travail en &eacute;quipe et la gestion de projets.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </span>
+                            <span>Mons, Belgique</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="m22 7-10 7L2 7"/></svg>
+                            </span>
+                            <span>sarahmorgantordeur@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </span>
+                            <span>0494 62 18 00</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            </span>
+                            <span>Fran&ccedil;ais, Anglais, Espagnol</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-dot red"></div>
+                            <div class="terminal-dot yellow"></div>
+                            <div class="terminal-dot green"></div>
+                            <span class="terminal-title">sarah@portfolio:~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="prompt">$</span> <span class="cmd">cat</span> profil.json</p>
+                            <pre><code>{
+  <span class="key">"nom"</span>: <span class="value">"Sarah Tordeur"</span>,
+  <span class="key">"role"</span>: <span class="value">"D&eacute;veloppeur Full Stack"</span>,
+  <span class="key">"formation"</span>: <span class="value">"Technocit&eacute;"</span>,
+  <span class="key">"passion"</span>: [
+    <span class="value">"Web Development"</span>,
+    <span class="value">"Math&eacute;matiques"</span>,
+    <span class="value">"Art &agrave; l'acrylique"</span>
+  ],
+  <span class="key">"disponible"</span>: <span class="bool">true</span>
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Comp&eacute;tences <span class="accent">techniques</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                        </div>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                        </div>
+                        <h3>Bases de donn&eacute;es</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">SQLAlchemy</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <div class="skill-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3>Outils &amp; DevOps</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Stripe API</span>
+                        <span class="skill-tag">LaTeX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Mes <span class="accent">projets</span></h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://mobertaimont.be" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Voir le site">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <span class="project-badge">Projet phare</span>
+                    <h3 class="project-name">Site vitrine A.S.B.L.</h3>
+                    <p class="project-description">
+                        Conception et d&eacute;veloppement complet d'un site vitrine pour une A.S.B.L. avec une application web
+                        connect&eacute;e &agrave; une base de donn&eacute;es SQL. Int&eacute;gration d'un CRUD complet et d'une
+                        <strong>interface d'administration ergonomique (No Code)</strong> permettant aux administrateurs de g&eacute;rer
+                        le contenu de mani&egrave;re autonome. Mise en place d'un <strong>syst&egrave;me de paiement s&eacute;curis&eacute; via Stripe</strong>.
+                    </p>
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>JavaScript</span>
+                        <span>SQL</span>
+                        <span>Stripe</span>
+                    </div>
+                    <span class="project-date">2025 - 2026</span>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://art-57k.pages.dev" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Voir le site">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-name">Galerie d'art acrylique</h3>
+                    <p class="project-description">
+                        Mini site vitrine single page pour pr&eacute;senter mes &oelig;uvres &agrave; l'acrylique.
+                        Interface &eacute;l&eacute;gante et responsive pour mettre en valeur chaque cr&eacute;ation artistique.
+                    </p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                    </div>
+                    <span class="project-date">2026</span>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                    </div>
+                    <h3 class="project-name">ERP Club de patinage</h3>
+                    <p class="project-description">
+                        ERP complet pour un club de patinage artistique : gestion de groupes, pr&eacute;sences,
+                        statuts admin/parents/patineurs. Base de donn&eacute;es SQLite via l'ORM SQLAlchemy.
+                        Accompagn&eacute; d'un <strong>site vitrine</strong> pour le contact et les actualit&eacute;s du club.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>SQLite</span>
+                        <span>SQLAlchemy</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                    </div>
+                    <span class="project-date">2026</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education" id="education">
+        <div class="container">
+            <h2 class="section-title">Mon <span class="accent">parcours</span></h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">Sept. 2025 - Mars 2026</span>
+                        <h3>D&eacute;veloppeur Full Stack</h3>
+                        <p class="timeline-place">Technocit&eacute;</p>
+                        <p>D&eacute;veloppement web complet (frontend &amp; backend), conception, bases de donn&eacute;es et serveurs.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2025 - 2026</span>
+                        <h3>Formations autodidactes</h3>
+                        <p class="timeline-place">OpenClassrooms, Coursera, SQLZOO</p>
+                        <p>C++, JavaScript, HTML5/CSS3, Python for Data Science (IBM), SQL, utilisation de l'IA pour la productivit&eacute;.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2024</span>
+                        <h3>Master en sciences de l'&eacute;ducation</h3>
+                        <p class="timeline-place">UMONS FPSE</p>
+                        <p>Finalit&eacute; Technologies de l'&Eacute;ducation. Moyenne de 15/20 pour l'ann&eacute;e passerelle. 64 cr&eacute;dits obtenus.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2020 - 2023</span>
+                        <h3>Bachelier AESI - Math&eacute;matiques</h3>
+                        <p class="timeline-place">HEPH - Condorcet, Mons</p>
+                        <p>Mention <strong>distinction</strong> et <strong>prix du didactique</strong>.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2018 - 2020</span>
+                        <h3>Bachelier en sciences math&eacute;matiques</h3>
+                        <p class="timeline-place">UMONS - Facult&eacute; de Sciences</p>
+                        <p>73 cr&eacute;dits obtenus. Logique (19/20), Programmation et algorithmique, Alg&egrave;bre, Physique g&eacute;n&eacute;rale.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-block">
+                <h3 class="experience-title">Exp&eacute;rience professionnelle</h3>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Enseignante en math&eacute;matiques</h4>
+                        <span class="timeline-date">Ao&ucirc;t 2023 - Mai 2025</span>
+                    </div>
+                    <p>Cours de math&eacute;matiques dans le degr&eacute; inf&eacute;rieur dans diverses &eacute;coles du r&eacute;seau libre catholique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Me <span class="accent">contacter</span></h2>
+            <p class="contact-intro">
+                Je suis actuellement &agrave; la recherche d'opportunit&eacute;s en d&eacute;veloppement web.
+                N'h&eacute;sitez pas &agrave; me contacter !
+            </p>
+            <div class="contact-grid">
+                <a href="mailto:sarahmorgantordeur@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>sarahmorgantordeur@gmail.com</p>
+                </a>
+                <a href="tel:+32494621800" class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <h3>T&eacute;l&eacute;phone</h3>
+                    <p>0494 62 18 00</p>
+                </a>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Localisation</h3>
+                    <p>Mons, Belgique</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-logo">&lt;ST /&gt;</p>
+                <p>&copy; 2026 Sarah Tordeur. Tous droits r&eacute;serv&eacute;s.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
