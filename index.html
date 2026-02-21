@@ -3,8 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sarah Tordeur | D&eacute;veloppeur Full Stack</title>
-    <meta name="description" content="Portfolio de Sarah Tordeur, d&eacute;veloppeur Full Stack Junior bas&eacute;e &agrave; Mons, Belgique.">
+
+    <!-- ===== SEO de base ===== -->
+    <title>Sarah Tordeur | D&eacute;veloppeur Full Stack &mdash; Mons, Belgique</title>
+    <meta name="description" content="Portfolio de Sarah Tordeur, d&eacute;veloppeur Full Stack Junior bas&eacute;e &agrave; Mons (Belgique). Comp&eacute;tences en PHP, JavaScript, Python, SQL, Node.js et Docker. Disponible pour de nouvelles opportunit&eacute;s.">
+    <meta name="keywords" content="d&eacute;veloppeur full stack, Sarah Tordeur, Mons, Belgique, PHP, JavaScript, Python, SQL, Node.js, Docker, portfolio, d&eacute;veloppeur web, junior">
+    <meta name="author" content="Sarah Tordeur">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sarahtordeur.dev/">
+
+    <!-- ===== Open Graph (Facebook, LinkedIn, WhatsApp) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sarahtordeur.dev/">
+    <meta property="og:title" content="Sarah Tordeur | D&eacute;veloppeur Full Stack &mdash; Mons, Belgique">
+    <meta property="og:description" content="D&eacute;veloppeur Full Stack Junior ma&icirc;trisant PHP, JavaScript, Python, SQL et Docker. Retrouvez mes projets et exp&eacute;riences sur mon portfolio.">
+    <meta property="og:locale" content="fr_BE">
+    <meta property="og:site_name" content="Sarah Tordeur &mdash; Portfolio">
+
+<!-- ===== Donn&eacute;es structur&eacute;es JSON-LD ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sarah Tordeur",
+      "url": "https://sarahtordeur.dev/",
+      "email": "sarahmorgantordeur@gmail.com",
+      "telephone": "+32494621800",
+      "jobTitle": "D\u00e9veloppeur Full Stack",
+      "description": "D\u00e9veloppeur Full Stack Junior ma\u00eEtrisant PHP, JavaScript, Python, SQL et Docker, bas\u00e9e \u00e0 Mons, Belgique.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mons",
+        "addressCountry": "BE"
+      },
+      "knowsAbout": ["PHP", "JavaScript", "Python", "SQL", "Node.js", "Docker", "HTML5", "CSS3", "Tailwind CSS", "MongoDB", "SQLite", "Git", "Java"],
+      "knowsLanguage": ["fr", "en", "es"],
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Technocit\u00e9"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "UMONS"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "HEPH Condorcet"
+        }
+      ]
+    }
+    </script>
+
+    <!-- ===== Performances ===== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
@@ -12,9 +63,9 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar" aria-label="Navigation principale">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">&lt;ST /&gt;</a>
+            <a href="#hero" class="nav-logo" aria-label="Sarah Tordeur - Accueil">&lt;ST /&gt;</a>
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -31,7 +82,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
+    <section class="hero" id="hero" aria-label="Introduction">
         <div class="hero-bg-grid"></div>
         <div class="hero-content">
             <p class="hero-greeting">Bonjour, je suis</p>
@@ -57,7 +108,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="section about" id="about">
+    <section class="section about" id="about" aria-label="A propos de moi">
         <div class="container">
             <h2 class="section-title">A propos de <span class="accent">moi</span></h2>
             <div class="about-grid">
@@ -135,7 +186,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section class="section skills" id="skills">
+    <section class="section skills" id="skills" aria-label="Competences techniques">
         <div class="container">
             <h2 class="section-title">Comp&eacute;tences <span class="accent">techniques</span></h2>
             <div class="skills-grid">
@@ -201,7 +252,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="section projects" id="projects">
+    <section class="section projects" id="projects" aria-label="Projets realises">
         <div class="container">
             <h2 class="section-title">Mes <span class="accent">projets</span></h2>
             <div class="projects-grid">
@@ -286,7 +337,7 @@
     </section>
 
     <!-- Education Section -->
-    <section class="section education" id="education">
+    <section class="section education" id="education" aria-label="Parcours et formations">
         <div class="container">
             <h2 class="section-title">Mon <span class="accent">parcours</span></h2>
             <div class="timeline">
@@ -351,7 +402,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section contact" id="contact">
+    <section class="section contact" id="contact" aria-label="Contact">
         <div class="container">
             <h2 class="section-title">Me <span class="accent">contacter</span></h2>
             <p class="contact-intro">
