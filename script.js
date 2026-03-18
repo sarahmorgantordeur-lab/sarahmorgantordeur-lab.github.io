@@ -106,9 +106,15 @@ function closeModal() {
 }
 
 function updateCounter() {
-    modalCounter.textContent = `${currentIndex + 1} / ${activeGallery.length}`;
-    modalPrev.disabled = currentIndex === 0;
-    modalNext.disabled = currentIndex === activeGallery.length - 1;
+    const single = activeGallery.length === 1;
+    modalCounter.style.display = single ? 'none' : '';
+    modalPrev.style.visibility  = single ? 'hidden' : '';
+    modalNext.style.visibility  = single ? 'hidden' : '';
+    if (!single) {
+        modalCounter.textContent = `${currentIndex + 1} / ${activeGallery.length}`;
+        modalPrev.disabled = currentIndex === 0;
+        modalNext.disabled = currentIndex === activeGallery.length - 1;
+    }
 }
 
 function navigate(dir) {
@@ -127,6 +133,11 @@ document.querySelectorAll('.mockup-gallery').forEach(gallery => {
     imgs.forEach((img, i) => {
         img.addEventListener('click', () => openModal(imgs, i));
     });
+});
+
+// Clic sur les schémas mermaid → modale plein écran (1 seule image, sans nav)
+document.querySelectorAll('.mermaid-img-wrap img').forEach(img => {
+    img.addEventListener('click', () => openModal([img], 0));
 });
 
 modalClose.addEventListener('click', closeModal);

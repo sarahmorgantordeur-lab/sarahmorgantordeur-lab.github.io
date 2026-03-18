@@ -691,6 +691,12 @@ img {
     height: auto;
     border-radius: 4px;
     display: inline-block;
+    cursor: zoom-in;
+    transition: var(--transition);
+}
+
+.mermaid-img-wrap img:hover {
+    opacity: 0.85;
 }
 
 /* ===== Modale ===== */
