@@ -538,6 +538,13 @@ img {
     transform: translateY(-2px);
 }
 
+.project-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
 .project-badge {
     display: inline-block;
     font-family: var(--font-mono);
@@ -548,8 +555,171 @@ img {
     background: rgba(0, 200, 224, 0.1);
     padding: 4px 12px;
     border-radius: 20px;
-    margin-bottom: 12px;
     width: fit-content;
+}
+
+.project-badge-alt {
+    color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+/* Carte principale Find My Roof */
+.project-main {
+    grid-column: 1 / -1;
+}
+
+/* Zone mockups */
+.project-mockups {
+    margin: 20px 0;
+}
+
+/* Galerie scrollable horizontalement */
+.mockup-gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) var(--bg-card);
+}
+
+.mockup-gallery::-webkit-scrollbar {
+    height: 4px;
+}
+
+.mockup-gallery::-webkit-scrollbar-track {
+    background: var(--bg-card);
+    border-radius: 2px;
+}
+
+.mockup-gallery::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+.mockup-gallery img {
+    flex-shrink: 0;
+    height: 220px;
+    width: auto;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border);
+    object-fit: cover;
+    scroll-snap-align: start;
+    cursor: zoom-in;
+    transition: var(--transition);
+}
+
+.mockup-gallery img:hover {
+    border-color: var(--accent);
+    transform: scale(1.02);
+}
+
+/* Bloc schema mermaid */
+.mermaid-block {
+    margin-top: 20px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.mermaid-block summary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    user-select: none;
+    list-style: none;
+    background: rgba(0, 0, 0, 0.2);
+    transition: var(--transition);
+}
+
+.mermaid-block summary::-webkit-details-marker {
+    display: none;
+}
+
+.mermaid-block summary::after {
+    content: '▾';
+    margin-left: auto;
+    color: var(--accent);
+    transition: transform var(--transition);
+}
+
+.mermaid-block[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.mermaid-block summary:hover {
+    color: var(--text-primary);
+    background: rgba(0, 200, 224, 0.05);
+}
+
+.mermaid-block summary svg {
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.mermaid-img-wrap {
+    padding: 16px;
+    background: #ffffff;
+    overflow-x: auto;
+    text-align: center;
+}
+
+.mermaid-img-wrap img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Lightbox */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.92);
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+}
+
+.lightbox-overlay.active {
+    display: flex;
+}
+
+.lightbox-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    line-height: 1;
+    opacity: 0.7;
+    transition: var(--transition);
+}
+
+.lightbox-close:hover {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .project-name {

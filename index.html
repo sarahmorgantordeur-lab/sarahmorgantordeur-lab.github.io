@@ -7,7 +7,6 @@
     <!-- ===== SEO de base ===== -->
     <title>Sarah Tordeur | D&eacute;veloppeur Full Stack &mdash; Mons, Belgique</title>
     <meta name="description" content="Portfolio de Sarah Tordeur, d&eacute;veloppeur Full Stack Junior bas&eacute;e &agrave; Mons (Belgique). Comp&eacute;tences en PHP, JavaScript, Python, SQL, Node.js et Docker. Disponible pour de nouvelles opportunit&eacute;s.">
-    <meta name="keywords" content="d&eacute;veloppeur full stack, Sarah Tordeur, Mons, Belgique, PHP, JavaScript, Python, SQL, Node.js, Docker, portfolio, d&eacute;veloppeur web, junior">
     <meta name="author" content="Sarah Tordeur">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://sarahtordeur.dev/">
@@ -17,6 +16,7 @@
     <meta property="og:url" content="https://sarahtordeur.dev/">
     <meta property="og:title" content="Sarah Tordeur | D&eacute;veloppeur Full Stack &mdash; Mons, Belgique">
     <meta property="og:description" content="D&eacute;veloppeur Full Stack Junior ma&icirc;trisant PHP, JavaScript, Python, SQL et Docker. Retrouvez mes projets et exp&eacute;riences sur mon portfolio.">
+    <meta property="og:image">
     <meta property="og:locale" content="fr_BE">
     <meta property="og:site_name" content="Sarah Tordeur &mdash; Portfolio">
 
@@ -86,7 +86,7 @@
         <div class="hero-bg-grid"></div>
         <div class="hero-content">
             <p class="hero-greeting">Bonjour, je suis</p>
-            <h1 class="hero-name">Sarah <span class="accent">Tordeur</span></h1>
+            <h1>Sarah Tordeur – Développeur Full Stack à Mons (Belgique)</h1>            
             <h2 class="hero-title">D&eacute;veloppeur Full Stack</h2>
             <p class="hero-description">
                 Passionn&eacute;e par le d&eacute;veloppement web, je con&ccedil;ois des applications
@@ -256,6 +256,61 @@
         <div class="container">
             <h2 class="section-title">Mes <span class="accent">projets</span></h2>
             <div class="projects-grid">
+                <!-- Project Find My Roof -->
+                <article class="project-card featured project-main">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-badges">
+                        <span class="project-badge">Projet phare</span>
+                        <span class="project-badge project-badge-alt">Fin de formation &mdash; Technocit&eacute; Hornu n&deg;13606</span>
+                    </div>
+                    <h3 class="project-name">Find My Roof</h3>
+                    <p class="project-description">
+                        Plateforme compl&egrave;te pour <strong>simplifier la recherche de logement</strong> : mise en relation locataires
+                        et propri&eacute;taires, gestion des annonces, recherche filtr&eacute;e et interface d'administration.
+                        Architecture full stack moderne avec <strong>React + Vite</strong> c&ocirc;t&eacute; client
+                        et <strong>Node.js</strong> c&ocirc;t&eacute; serveur, base de donn&eacute;es <strong>PostgreSQL</strong> pilot&eacute;e
+                        via l'ORM <strong>Prisma</strong>. Projet h&eacute;berg&eacute; en local et expos&eacute; via <strong>ngrok</strong>.
+                    </p>
+
+                    <!-- Galerie mockups -->
+                    <div class="project-mockups">
+                        <div class="mockup-gallery">
+                            <img src="assets/find_my_roof/IMG_0430.png" alt="Find My Roof - capture 1" loading="lazy">
+                            <img src="assets/find_my_roof/IMG_5752.png" alt="Find My Roof - capture 2" loading="lazy">
+                            <img src="assets/find_my_roof/IMG_5753.png" alt="Find My Roof - capture 3" loading="lazy">
+                            <img src="assets/find_my_roof/IMG_5755.png" alt="Find My Roof - capture 4" loading="lazy">
+                            <img src="assets/find_my_roof/IMG_5766.png" alt="Find My Roof - capture 5" loading="lazy">
+                            <img src="assets/find_my_roof/Image_17-03-26_a_14.34.png" alt="Find My Roof - capture 6" loading="lazy">
+                            <img src="assets/find_my_roof/Image_17-03-26_a_14.45.png" alt="Find My Roof - capture 7" loading="lazy">
+                        </div>
+                    </div>
+
+                    <!-- Sch&eacute;ma Mermaid -->
+                    <details class="mermaid-block">
+                        <summary>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                            Sch&eacute;ma de la base de donn&eacute;es
+                        </summary>
+                        <div class="mermaid-img-wrap">
+                            <img src="assets/find_my_roof/mermaid-diagram.png" alt="Sch&eacute;ma BDD Find My Roof" loading="lazy">
+                        </div>
+                    </details>
+
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Vite</span>
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+                        <span>Prisma</span>
+                        <span>ngrok</span>
+                    </div>
+                    <span class="project-date">2026</span>
+                </article>
+
                 <!-- Project 1 -->
                 <article class="project-card featured">
                     <div class="project-header">
@@ -444,6 +499,12 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Image agrandie">
+        <span class="lightbox-close" id="lightboxClose" aria-label="Fermer">&times;</span>
+        <img id="lightboxImg" src="" alt="">
+    </div>
 
     <script src="script.js"></script>
 </body>
