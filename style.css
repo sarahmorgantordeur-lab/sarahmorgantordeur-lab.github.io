@@ -566,6 +566,18 @@ img {
     letter-spacing: 0.5px;
 }
 
+.project-badge-wip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    text-transform: none;
+    letter-spacing: 0.3px;
+    margin-bottom: 12px;
+}
+
 /* Carte principale Find My Roof */
 .project-main {
     grid-column: 1 / -1;
