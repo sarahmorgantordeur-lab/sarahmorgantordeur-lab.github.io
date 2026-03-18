@@ -420,7 +420,7 @@ img {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
 
@@ -983,6 +983,10 @@ img {
     .about-grid {
         grid-template-columns: 1fr;
         gap: 32px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .skills-grid {
