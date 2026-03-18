@@ -684,6 +684,8 @@ img {
     background: #ffffff;
     overflow-x: auto;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
 
 .mermaid-img-wrap img {
@@ -692,11 +694,12 @@ img {
     border-radius: 4px;
     display: inline-block;
     cursor: zoom-in;
-    transition: var(--transition);
+    pointer-events: all;
+    transition: opacity var(--transition);
 }
 
 .mermaid-img-wrap img:hover {
-    opacity: 0.85;
+    opacity: 0.8;
 }
 
 /* ===== Modale ===== */

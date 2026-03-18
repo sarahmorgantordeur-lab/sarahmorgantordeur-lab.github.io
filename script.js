@@ -135,9 +135,11 @@ document.querySelectorAll('.mockup-gallery').forEach(gallery => {
     });
 });
 
-// Clic sur les schémas mermaid → modale plein écran (1 seule image, sans nav)
-document.querySelectorAll('.mermaid-img-wrap img').forEach(img => {
-    img.addEventListener('click', () => openModal([img], 0));
+// Clic sur les schémas mermaid → modale plein écran (délégation d'événement)
+document.addEventListener('click', (e) => {
+    if (e.target.tagName === 'IMG' && e.target.closest('.mermaid-img-wrap')) {
+        openModal([e.target], 0);
+    }
 });
 
 modalClose.addEventListener('click', closeModal);
