@@ -993,34 +993,31 @@ img {
 }
 
 /* ===== CONTACT ===== */
-/* ===== CONTACT ===== */
 .contact-layout {
     display: grid;
     grid-template-columns: 1fr 1.8fr;
-    gap: 48px;
+    gap: 40px;
     align-items: start;
 }
 
-/* --- Colonne infos --- */
+/* Colonne infos */
 .contact-infos {
     display: flex;
     flex-direction: column;
-    gap: 28px;
-    position: sticky;
-    top: 100px;
+    gap: 24px;
 }
 
 .contact-availability {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
     color: #34d399;
     background: rgba(52, 211, 153, 0.08);
     border: 1px solid rgba(52, 211, 153, 0.2);
-    border-radius: 50px;
-    padding: 8px 16px;
+    border-radius: 20px;
+    padding: 6px 14px;
     width: fit-content;
 }
 
@@ -1035,11 +1032,11 @@ img {
 
 @keyframes pulse-dot {
     0%, 100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.5); }
-    50%       { box-shadow: 0 0 0 6px rgba(52, 211, 153, 0); }
+    50%       { box-shadow: 0 0 0 5px rgba(52, 211, 153, 0); }
 }
 
 .contact-intro-text {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: var(--text-secondary);
     line-height: 1.8;
 }
@@ -1047,29 +1044,27 @@ img {
 .contact-info-list {
     display: flex;
     flex-direction: column;
-    gap: 4px;
+    gap: 12px;
 }
 
+/* Même style que detail-item dans about */
 .contact-info-item {
     display: flex;
     align-items: center;
-    gap: 14px;
-    padding: 14px 16px;
-    border-radius: var(--radius-sm);
-    transition: var(--transition);
-    text-decoration: none;
+    gap: 16px;
     color: inherit;
-    border: 1px solid transparent;
+    text-decoration: none;
+    transition: var(--transition);
 }
 
-.contact-info-item:hover {
-    background: rgba(0, 200, 224, 0.05);
-    border-color: rgba(0, 200, 224, 0.15);
+.contact-info-item:hover .contact-info-icon {
+    background: rgba(0, 200, 224, 0.18);
 }
 
+/* Même style que skill-icon */
 .contact-info-icon {
-    width: 38px;
-    height: 38px;
+    width: 44px;
+    height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1077,6 +1072,7 @@ img {
     border-radius: var(--radius-sm);
     color: var(--accent);
     flex-shrink: 0;
+    transition: var(--transition);
 }
 
 .contact-info-text {
@@ -1096,31 +1092,23 @@ img {
 .contact-info-value {
     font-size: 0.88rem;
     color: var(--text-primary);
-    font-weight: 500;
 }
 
-/* --- Formulaire --- */
+/* Formulaire — même carte que skill-category / project-card */
 .contact-form {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 40px;
+    padding: 28px;
     display: flex;
     flex-direction: column;
-    gap: 22px;
-    position: relative;
-    overflow: hidden;
+    gap: 20px;
+    transition: var(--transition);
 }
 
-.contact-form::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: var(--gradient-accent);
-    border-radius: var(--radius) var(--radius) 0 0;
+.contact-form:focus-within {
+    border-color: rgba(0, 200, 224, 0.3);
+    box-shadow: var(--shadow-glow);
 }
 
 .form-row {
@@ -1132,14 +1120,13 @@ img {
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
 }
 
 .form-group label {
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-secondary);
-    letter-spacing: 0.3px;
     transition: color var(--transition);
 }
 
@@ -1149,39 +1136,15 @@ img {
 
 .required {
     color: var(--accent);
-    margin-left: 2px;
 }
 
-/* Wrapper avec icône */
-.input-wrapper {
-    position: relative;
-}
-
-.input-icon {
-    position: absolute;
-    left: 14px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--text-muted);
-    pointer-events: none;
-    transition: color var(--transition);
-    z-index: 1;
-}
-
-.input-wrapper:focus-within .input-icon {
-    color: var(--accent);
-}
-
-.input-wrapper input {
-    padding-left: 42px !important;
-}
-
+/* Inputs — même style de fond que le terminal */
 .form-group input,
 .form-group textarea {
     background: var(--bg-primary);
-    border: 1.5px solid var(--border);
+    border: 1px solid var(--border);
     border-radius: var(--radius-sm);
-    padding: 13px 16px;
+    padding: 12px 16px;
     font-family: var(--font-main);
     font-size: 0.9rem;
     color: var(--text-primary);
@@ -1193,101 +1156,55 @@ img {
 .form-group input::placeholder,
 .form-group textarea::placeholder {
     color: var(--text-muted);
-    font-size: 0.85rem;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: var(--accent);
-    background: rgba(0, 200, 224, 0.03);
-    box-shadow: 0 0 0 4px rgba(0, 200, 224, 0.08);
+    box-shadow: 0 0 0 3px rgba(0, 200, 224, 0.1);
 }
 
 .form-group input.invalid,
 .form-group textarea.invalid {
     border-color: #f87171;
-    box-shadow: 0 0 0 4px rgba(248, 113, 113, 0.08);
+    box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.08);
 }
 
 .form-group textarea {
     resize: vertical;
     min-height: 130px;
-    padding: 13px 16px;
     line-height: 1.7;
 }
 
 .form-error {
-    font-size: 0.75rem;
+    font-size: 0.78rem;
     color: #f87171;
     display: none;
-    align-items: center;
-    gap: 4px;
 }
 
 .form-group.has-error .form-error {
-    display: flex;
+    display: block;
 }
 
-/* Bouton submit */
+/* Bouton — même style que btn-primary dans le hero */
 .btn-submit {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 15px 36px;
-    background: var(--gradient-accent);
-    color: var(--bg-primary);
-    font-family: var(--font-main);
-    font-size: 0.95rem;
-    font-weight: 700;
-    border: none;
-    border-radius: var(--radius-sm);
+    align-self: flex-start;
     cursor: pointer;
-    overflow: hidden;
-    transition: var(--transition);
-    width: 100%;
-    margin-top: 4px;
-}
-
-.btn-submit:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 32px rgba(0, 200, 224, 0.35);
-}
-
-.btn-submit:active {
-    transform: translateY(0);
+    border: none;
+    font-family: var(--font-main);
 }
 
 .btn-submit:disabled {
-    opacity: 0.7;
+    opacity: 0.6;
     cursor: not-allowed;
-    transform: none;
+    transform: none !important;
 }
 
 .btn-text,
 .btn-loading {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    position: relative;
-    z-index: 1;
-}
-
-/* Effet shine au hover */
-.btn-shine {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s ease;
-    pointer-events: none;
-}
-
-.btn-submit:hover .btn-shine {
-    left: 140%;
+    gap: 8px;
 }
 
 .spinner {
@@ -1298,47 +1215,38 @@ img {
     to { transform: rotate(360deg); }
 }
 
-/* Feedbacks */
+/* Feedbacks — même style que les badges WIP/success */
 .form-feedback {
     display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 16px 20px;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
     border-radius: var(--radius-sm);
     font-size: 0.88rem;
-    animation: fadeSlideIn 0.3s ease;
+    font-weight: 500;
 }
 
-@keyframes fadeSlideIn {
-    from { opacity: 0; transform: translateY(-8px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
-
-.form-feedback svg {
-    flex-shrink: 0;
-    margin-top: 2px;
-}
+.form-feedback svg { flex-shrink: 0; }
 
 .form-feedback strong {
     display: block;
-    font-size: 0.9rem;
     margin-bottom: 2px;
 }
 
 .form-feedback p {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     opacity: 0.8;
 }
 
 .form-success {
     background: rgba(52, 211, 153, 0.08);
-    border: 1px solid rgba(52, 211, 153, 0.25);
+    border: 1px solid rgba(52, 211, 153, 0.2);
     color: #34d399;
 }
 
 .form-error-global {
     background: rgba(248, 113, 113, 0.08);
-    border: 1px solid rgba(248, 113, 113, 0.25);
+    border: 1px solid rgba(248, 113, 113, 0.2);
     color: #f87171;
 }
 
