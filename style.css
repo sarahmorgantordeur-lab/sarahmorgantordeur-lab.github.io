@@ -1226,6 +1226,10 @@ img {
     font-weight: 500;
 }
 
+.form-feedback[hidden] {
+    display: none;
+}
+
 .form-feedback svg { flex-shrink: 0; }
 
 .form-feedback strong {
