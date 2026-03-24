@@ -1227,7 +1227,7 @@ img {
 }
 
 .form-feedback[hidden] {
-    display: none;
+    display: none !important;
 }
 
 .form-feedback svg { flex-shrink: 0; }
