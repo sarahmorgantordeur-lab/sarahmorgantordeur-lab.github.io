@@ -184,12 +184,12 @@ contactForm.addEventListener('submit', async (e) => {
 
     const btnText    = submitBtn.querySelector('.btn-text');
     const btnLoading = submitBtn.querySelector('.btn-loading');
-    btnText.hidden    = true;
-    btnLoading.hidden = false;
+    btnText.style.display    = 'none';
+    btnLoading.style.display = 'inline-flex';
     submitBtn.disabled = true;
 
-    formSuccess.hidden = true;
-    formError.hidden   = true;
+    formSuccess.style.display = 'none';
+    formError.style.display   = 'none';
 
     try {
         const res = await fetch(contactForm.action, {
@@ -201,15 +201,15 @@ contactForm.addEventListener('submit', async (e) => {
         if (res.ok) {
             contactForm.reset();
             fields.forEach(f => { f.classList.remove('invalid'); f.closest('.form-group').classList.remove('has-error'); });
-            formSuccess.hidden = false;
+            formSuccess.style.display = 'flex';
         } else {
-            formError.hidden = false;
+            formError.style.display = 'flex';
         }
     } catch {
-        formError.hidden = false;
+        formError.style.display = 'flex';
     } finally {
-        btnText.hidden    = false;
-        btnLoading.hidden = true;
+        btnText.style.display    = 'inline-flex';
+        btnLoading.style.display = 'none';
         submitBtn.disabled = false;
     }
 });
