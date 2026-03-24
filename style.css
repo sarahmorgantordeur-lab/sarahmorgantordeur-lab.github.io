@@ -1207,6 +1207,11 @@ img {
     gap: 8px;
 }
 
+.btn-text[hidden],
+.btn-loading[hidden] {
+    display: none !important;
+}
+
 .spinner {
     animation: spin 0.9s linear infinite;
 }
