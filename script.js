@@ -154,6 +154,66 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowRight') navigate(1);
 });
 
+// ===== Formulaire de contact =====
+const contactForm  = document.getElementById('contactForm');
+const submitBtn    = document.getElementById('submitBtn');
+const formSuccess  = document.getElementById('formSuccess');
+const formError    = document.getElementById('formError');
+
+function validateField(input) {
+    const group = input.closest('.form-group');
+    const isValid = input.checkValidity() && input.value.trim() !== '';
+    group.classList.toggle('has-error', !isValid);
+    input.classList.toggle('invalid', !isValid);
+    return isValid;
+}
+
+contactForm.querySelectorAll('input, textarea').forEach(field => {
+    field.addEventListener('blur', () => validateField(field));
+    field.addEventListener('input', () => {
+        if (field.classList.contains('invalid')) validateField(field);
+    });
+});
+
+contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const fields = [...contactForm.querySelectorAll('input[required], textarea[required]')];
+    const allValid = fields.map(validateField).every(Boolean);
+    if (!allValid) return;
+
+    const btnText    = submitBtn.querySelector('.btn-text');
+    const btnLoading = submitBtn.querySelector('.btn-loading');
+    btnText.hidden    = true;
+    btnLoading.hidden = false;
+    submitBtn.disabled = true;
+
+    formSuccess.hidden = true;
+    formError.hidden   = true;
+
+    try {
+        const res = await fetch(contactForm.action, {
+            method: 'POST',
+            body: new FormData(contactForm),
+            headers: { Accept: 'application/json' }
+        });
+
+        if (res.ok) {
+            contactForm.reset();
+            fields.forEach(f => { f.classList.remove('invalid'); f.closest('.form-group').classList.remove('has-error'); });
+            formSuccess.hidden = false;
+        } else {
+            formError.hidden = false;
+        }
+    } catch {
+        formError.hidden = false;
+    } finally {
+        btnText.hidden    = false;
+        btnLoading.hidden = true;
+        submitBtn.disabled = false;
+    }
+});
+
 // ===== Smooth scroll for anchor links =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
