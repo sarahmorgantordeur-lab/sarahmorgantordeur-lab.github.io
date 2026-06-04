@@ -975,6 +975,7 @@ img {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 24px;
+    margin-top: 20px;
 }
 
 .experience-item + .experience-item {
