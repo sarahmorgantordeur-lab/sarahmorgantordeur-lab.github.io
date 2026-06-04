@@ -11,7 +11,7 @@
     <!-- ===== SEO de base ===== -->
     <title>Sarah Tordeur | D&eacute;veloppeur Full Stack &mdash; Mons, Belgique</title>
     <meta name="description" content="Portfolio de Sarah Tordeur, d&eacute;veloppeur Full Stack Junior bas&eacute;e &agrave; Mons (Belgique). Sp&eacute;cialis&eacute;e en PHP, JavaScript, React, Node.js, Python et PostgreSQL. Disponible pour de nouvelles opportunit&eacute;s.">
-    <meta name="keywords" content="d&eacute;veloppeur full stack, Sarah Tordeur, Mons, Belgique, PHP, JavaScript, React, React Native, Expo, Firebase, NativeWind, Python, Node.js, PostgreSQL, Prisma, Cypress, Docker, portfolio, d&eacute;veloppeur web junior, Technocit&eacute;">
+    <meta name="keywords" content="d&eacute;veloppeur full stack, Sarah Tordeur, Mons, Belgique, PHP, JavaScript, TypeScript, Angular, React, React Native, Expo, Firebase, NativeWind, Python, Node.js, PostgreSQL, Prisma, Cypress, Docker, SQLite, FHIR, HL7, IRIS for Health, InterSystems, portfolio, d&eacute;veloppeur web junior, Technocit&eacute;">
     <meta name="author" content="Sarah Tordeur">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://sarahtordeur.dev/">
@@ -55,7 +55,7 @@
       {
         "@context": "https://schema.org",
         "@type": "ProfilePage",
-        "dateModified": "2026-04-03",
+        "dateModified": "2026-06-04",
         "mainEntity": {
           "@type": "Person",
           "@id": "https://sarahtordeur.dev/#sarah-tordeur",
@@ -72,10 +72,11 @@
             "addressCountry": "BE"
           },
           "knowsAbout": [
-            "PHP", "JavaScript", "React", "React Native", "Expo", "Vite", "Node.js",
+            "PHP", "JavaScript", "TypeScript", "Angular", "React", "React Native", "Expo", "Vite", "Node.js",
             "Python", "SQL", "PostgreSQL", "Prisma", "Cypress",
             "Firebase", "NativeWind", "Docker", "HTML5", "CSS3", "Tailwind CSS",
-            "MongoDB", "SQLite", "SQLAlchemy", "Git", "Java", "C++"
+            "MongoDB", "SQLite", "Git", "Java", "C++",
+            "FHIR R4", "HL7", "IRIS for Health", "InterSystems"
           ],
           "knowsLanguage": [
             { "@type": "Language", "name": "Fran\u00e7ais" },
@@ -140,8 +141,8 @@
             "item": {
               "@type": "WebApplication",
               "name": "ERP Club de patinage \u2014 Axel Club Tournai",
-              "url": "https://axelclubtournai.onrender.com/",
-              "description": "ERP complet pour club de patinage artistique. Python, SQLite, SQLAlchemy.",
+              "url": "https://www.axelclub.be/",
+              "description": "ERP complet pour club de patinage artistique. PHP 8.2, SQLite, OVH.",
               "author": { "@type": "Person", "name": "Sarah Tordeur" }
             }
           },
@@ -584,24 +585,21 @@
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
                         </div>
                         <div class="project-links">
-                            <a href="https://axelclubtournai.onrender.com/" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Voir le site">
+                            <a href="https://www.axelclub.be/" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="Voir le site">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                             </a>
                         </div>
                     </div>
-                    <span class="project-badge project-badge-wip">
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                        En cours de d&eacute;veloppement
-                    </span>
+                    <span class="project-badge">En ligne</span>
                     <h3 class="project-name">ERP &amp; Site vitrine &mdash; Axel Club</h3>
                     <p class="project-description">
-                        ERP complet pour un club de patinage artistique : gestion de groupes, pr&eacute;sences,
-                        statuts admin/parents/patineurs. Base de donn&eacute;es SQLite via l'ORM SQLAlchemy.
-                        Accompagn&eacute; d'un <strong>site vitrine</strong> pour le contact et les actualit&eacute;s du club.
+                        ERP complet pour un club de patinage artistique : gestion des membres, groupes,
+                        pr&eacute;sences, paiements et envois d'emails group&eacute;s. Espace membre et panneau
+                        d'administration complet (rapports, explorateur SQLite). <strong>Site vitrine</strong>
+                        int&eacute;gr&eacute; avec pages publiques, formulaire de contact et SEO. D&eacute;ploy&eacute; sur OVH.
                     </p>
                     <div class="project-mockups">
                         <div class="mockup-gallery">
-                            <img src="assets/axel_club/axel-club-1.png" alt="Axel Club - capture 1" loading="lazy">
                             <img src="assets/axel_club/axel-club-2.png" alt="Axel Club - capture 2" loading="lazy">
                             <img src="assets/axel_club/axel-club-3.png" alt="Axel Club - capture 3" loading="lazy">
                             <img src="assets/axel_club/axel-club-4.png" alt="Axel Club - capture 4" loading="lazy">
@@ -622,11 +620,11 @@
                         </div>
                     </details>
                     <div class="project-tech">
-                        <span>Python</span>
+                        <span>PHP 8.2</span>
                         <span>SQLite</span>
-                        <span>SQLAlchemy</span>
                         <span>HTML5</span>
                         <span>CSS3</span>
+                        <span>OVH</span>
                     </div>
                     <span class="project-date">2026</span>
                 </article>
@@ -709,7 +707,14 @@
     <span class="value">"lieu"</span>:       <span class="value">"Mons"</span>,
     <span class="value">"debut"</span>:      <span class="value">"18 mai 2026"</span>,
     <span class="value">"fin"</span>:        <span class="value">"29 juin 2026"</span>,
-    <span class="value">"statut"</span>:     <span class="value">"pr&eacute;vu"</span>
+    <span class="value">"statut"</span>:     <span class="value">"en cours"</span>,
+    <span class="value">"projets"</span>: [
+        <span class="value">"POC Angular &times; IRIS for Health"</span>,   <span class="comment"># 2 SPA : REST custom + FHIR R4</span>
+        <span class="value">"Frontend Angular &mdash; MPI"</span>,           <span class="comment"># interface Master Patient Index</span>
+        <span class="value">"FHIR-athon"</span>,                           <span class="comment"># interop. profils belges (be.allergy, be.core)</span>
+    ],
+    <span class="value">"stack"</span>: [<span class="value">"Angular 21"</span>, <span class="value">"TypeScript"</span>, <span class="value">"Tailwind CSS"</span>,
+              <span class="value">"FHIR R4"</span>, <span class="value">"HL7"</span>, <span class="value">"IRIS for Health"</span>, <span class="value">"Docker"</span>],
 }
 
 <span class="key">print</span>(<span class="value">f"Stage chez {stage['entreprise']} ({stage['lieu']}) "</span>
