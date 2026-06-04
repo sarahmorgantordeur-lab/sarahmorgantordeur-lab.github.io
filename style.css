@@ -366,6 +366,7 @@ img {
     border-radius: var(--radius);
     overflow: hidden;
     box-shadow: var(--shadow-card);
+    min-width: 0;
 }
 
 .terminal-header {
@@ -409,6 +410,7 @@ img {
 
 .terminal-body pre {
     margin-top: 8px;
+    overflow-x: auto;
 }
 
 .terminal-body code {
@@ -973,6 +975,10 @@ img {
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 24px;
+}
+
+.experience-item + .experience-item {
+    margin-top: 24px;
 }
 
 .experience-header {
