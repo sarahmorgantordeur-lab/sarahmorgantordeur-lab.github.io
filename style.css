@@ -587,6 +587,112 @@ img {
     grid-column: 1 / -1;
 }
 
+/* Projet de stage MPI */
+.stage-project {
+    border-color: rgba(0, 229, 255, 0.45);
+    background:
+        radial-gradient(circle at top right, rgba(0, 200, 224, 0.1), transparent 34%),
+        linear-gradient(135deg, var(--bg-card), rgba(0, 200, 224, 0.035));
+}
+
+.stage-intro {
+    max-width: 900px;
+    font-size: 0.96rem;
+}
+
+.stage-highlights,
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.stage-highlight,
+.roadmap-item {
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: rgba(10, 10, 26, 0.45);
+}
+
+.stage-highlight-label,
+.roadmap-status,
+.mockup-eyebrow {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--accent);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.stage-highlight p,
+.roadmap-item p {
+    color: var(--text-secondary);
+    font-size: 0.84rem;
+    line-height: 1.65;
+}
+
+.stage-mockups {
+    margin: 28px 0;
+}
+
+.stage-mockups .mockup-gallery {
+    gap: 16px;
+}
+
+.stage-mockups figure {
+    flex: 0 0 min(780px, 88%);
+    scroll-snap-align: start;
+}
+
+.stage-mockups .mockup-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.stage-mockups figcaption,
+.mockup-note {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+}
+
+.stage-mockups figcaption {
+    margin-top: 8px;
+}
+
+.mockup-note {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.stage-roadmap {
+    margin: 4px 0 24px;
+}
+
+.stage-roadmap h4 {
+    margin-bottom: 14px;
+    font-size: 1rem;
+}
+
+.roadmap-item {
+    border-left: 3px solid var(--accent-dark);
+}
+
+.roadmap-item strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.roadmap-status {
+    color: #f59e0b;
+    font-size: 0.67rem;
+}
+
 /* Zone mockups */
 .project-mockups {
     margin: 20px 0;
@@ -1382,6 +1488,15 @@ img {
 
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .stage-highlights,
+    .roadmap-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stage-mockups figure {
+        flex-basis: 94%;
     }
 
     .footer-content {
