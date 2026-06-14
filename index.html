@@ -598,25 +598,69 @@
                         L'architecture est pens&eacute;e pour un fonctionnement <strong>on-premise</strong>, sans sortie des donn&eacute;es sensibles.
                     </p>
 
-                    <div class="rag-architecture" aria-label="Architecture du pipeline Medical RAG">
-                        <div class="rag-step"><span>01</span><strong>Ingestion</strong><small>TXT, PDF, FHIR R4</small></div>
-                        <div class="rag-arrow" aria-hidden="true">&rarr;</div>
-                        <div class="rag-step"><span>02</span><strong>Pr&eacute;traitement</strong><small>Nettoyage, anonymisation, chunks</small></div>
-                        <div class="rag-arrow" aria-hidden="true">&rarr;</div>
-                        <div class="rag-step"><span>03</span><strong>Embeddings</strong><small>BioBERT, vecteurs 768D, norme L2</small></div>
-                        <div class="rag-arrow" aria-hidden="true">&rarr;</div>
-                        <div class="rag-step"><span>04</span><strong>Retrieval</strong><small>Top-10 FAISS / IRISVector</small></div>
-                        <div class="rag-arrow" aria-hidden="true">&rarr;</div>
-                        <div class="rag-step"><span>05</span><strong>Reranking</strong><small>Cross-encoder, top-3</small></div>
-                        <div class="rag-arrow" aria-hidden="true">&rarr;</div>
-                        <div class="rag-step"><span>06</span><strong>R&eacute;ponse</strong><small>BM25 + NanoNN, sources</small></div>
+                    <div class="ai-lab" aria-label="Architecture visuelle du pipeline d'intelligence artificielle Medical RAG">
+                        <div class="ai-lab-grid" aria-hidden="true"></div>
+                        <div class="ai-lab-header">
+                            <div>
+                                <span class="ai-kicker">AI pipeline &middot; 100 % local</span>
+                                <h4>De la donn&eacute;e m&eacute;dicale &agrave; une r&eacute;ponse sourc&eacute;e</h4>
+                            </div>
+                            <span class="ai-live"><i></i> On-premise</span>
+                        </div>
+
+                        <div class="ai-system">
+                            <div class="ai-inputs">
+                                <span class="ai-column-label">Sources</span>
+                                <div class="ai-node"><b>TXT</b><small>Documents</small></div>
+                                <div class="ai-node"><b>PDF</b><small>Publications</small></div>
+                                <div class="ai-node"><b>FHIR</b><small>IRIS for Health</small></div>
+                            </div>
+
+                            <div class="ai-connector" aria-hidden="true"><span></span></div>
+
+                            <div class="ai-core-wrap">
+                                <span class="ai-column-label">Intelligence s&eacute;mantique</span>
+                                <div class="ai-orbit ai-orbit-one"></div>
+                                <div class="ai-orbit ai-orbit-two"></div>
+                                <div class="ai-core">
+                                    <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9.5 4.5A3.5 3.5 0 0 0 6 8v1a3 3 0 0 0-1 5.83V16a4 4 0 0 0 4 4h1V4.5h-.5Z"/><path d="M14.5 4.5A3.5 3.5 0 0 1 18 8v1a3 3 0 0 1 1 5.83V16a4 4 0 0 1-4 4h-1V4.5h.5Z"/><path d="M6 9h2M16 9h2M7 15h3M14 15h3"/></svg>
+                                    <strong>BioBERT</strong>
+                                    <small>Embeddings 768D</small>
+                                </div>
+                                <span class="ai-satellite satellite-top">norme L2</span>
+                                <span class="ai-satellite satellite-right">cosinus</span>
+                                <span class="ai-satellite satellite-bottom">MNRL</span>
+                            </div>
+
+                            <div class="ai-connector" aria-hidden="true"><span></span></div>
+
+                            <div class="ai-retrieval">
+                                <span class="ai-column-label">Recherche</span>
+                                <div class="ai-engine ai-engine-active"><span>01</span><div><b>FAISS / IRISVector</b><small>Top-10 passages</small></div></div>
+                                <div class="ai-engine"><span>02</span><div><b>Cross-encoder</b><small>Reranking top-3</small></div></div>
+                                <div class="ai-engine"><span>03</span><div><b>BM25 + NanoNN</b><small>S&eacute;lection extractive</small></div></div>
+                            </div>
+                        </div>
+
+                        <div class="llm-layer">
+                            <div class="llm-heading">
+                                <span class="llm-icon" aria-hidden="true">&lt;/&gt;</span>
+                                <div><span>Couche de r&eacute;ponse</span><strong>LLM interchangeable selon le contexte de d&eacute;ploiement</strong></div>
+                            </div>
+                            <div class="llm-options">
+                                <div class="llm-option selected"><span>Par d&eacute;faut</span><strong>Extractive QA</strong><small>BM25 + NanoNN &middot; explicable</small></div>
+                                <div class="llm-option"><span>Hugging Face</span><strong>BioMistral 7B</strong><small>G&eacute;n&eacute;ration m&eacute;dicale locale</small></div>
+                                <div class="llm-option"><span>Serveur local</span><strong>Ollama</strong><small>Mod&egrave;le configurable &middot; API locale</small></div>
+                            </div>
+                            <div class="llm-output"><span class="llm-prompt">Question</span><i>&rarr;</i><span>Contexte top-3</span><i>&rarr;</i><strong>R&eacute;ponse + sources + avertissement</strong></div>
+                        </div>
                     </div>
 
                     <div class="rag-results" aria-label="R&eacute;sultats d'&eacute;valuation du Medical RAG">
-                        <div><strong>87,4 %</strong><span>MRR@10</span></div>
-                        <div><strong>92,3 %</strong><span>Recall@5</span></div>
-                        <div><strong>100 %</strong><span>Recall@10</span></div>
-                        <div><strong>90,2 %</strong><span>NDCG@10</span></div>
+                        <div class="rag-metric" style="--score: 87.4"><span class="metric-ring"><strong>87,4<small>%</small></strong></span><b>MRR@10</b><small>Rang du premier r&eacute;sultat pertinent</small></div>
+                        <div class="rag-metric" style="--score: 92.3"><span class="metric-ring"><strong>92,3<small>%</small></strong></span><b>Recall@5</b><small>R&eacute;sultat pertinent dans le top-5</small></div>
+                        <div class="rag-metric" style="--score: 100"><span class="metric-ring"><strong>100<small>%</small></strong></span><b>Recall@10</b><small>Couverture compl&egrave;te du jeu de test</small></div>
+                        <div class="rag-metric" style="--score: 90.2"><span class="metric-ring"><strong>90,2<small>%</small></strong></span><b>NDCG@10</b><small>Qualit&eacute; de l'ordre des r&eacute;sultats</small></div>
                     </div>
                     <p class="rag-evaluation-note">Mesures obtenues sur le jeu de test du prototype (13 requ&ecirc;tes). Elles &eacute;valuent la qualit&eacute; du retrieval, pas la validit&eacute; clinique d'un diagnostic.</p>
 
