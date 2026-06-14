@@ -9,9 +9,9 @@
     <meta name="theme-color" content="#00c8e0">
 
     <!-- ===== SEO de base ===== -->
-    <title>Sarah Tordeur | D&eacute;veloppeuse Full Stack, Angular &amp; FHIR &mdash; Mons</title>
-    <meta name="description" content="Portfolio de Sarah Tordeur, d&eacute;veloppeuse Full Stack &agrave; Mons. D&eacute;couvrez son stage chez Iderys : application MPI Angular, FHIR R4, IRIS for Health, recherche vectorielle, chatbot et fusion de dossiers patients.">
-    <meta name="keywords" content="d&eacute;veloppeuse full stack, Sarah Tordeur, Mons, Belgique, Angular, TypeScript, FHIR R4, HL7, Master Patient Index, MPI, IRIS for Health, InterSystems, ObjectScript, recherche vectorielle, intelligence artificielle, fusion patients, d&eacute;merge patients, PHP, JavaScript, React, Node.js, PostgreSQL, Docker, portfolio, Technocit&eacute;">
+    <title>Sarah Tordeur | Full Stack, IA m&eacute;dicale, Angular &amp; FHIR &mdash; Mons</title>
+    <meta name="description" content="Portfolio de Sarah Tordeur, d&eacute;veloppeuse Full Stack &agrave; Mons : MPI Angular et FHIR chez Iderys, RAG m&eacute;dical local avec BioBERT, FAISS, IRIS Vector Search et NLP.">
+    <meta name="keywords" content="d&eacute;veloppeuse full stack, Sarah Tordeur, Mons, Belgique, IA m&eacute;dicale, RAG m&eacute;dical, Retrieval-Augmented Generation, NLP, BioBERT, FAISS, recherche vectorielle, embeddings, bi-encodeur, cross-encodeur, BM25, Angular, TypeScript, FHIR R4, HL7, Master Patient Index, MPI, IRIS for Health, InterSystems, ObjectScript, Python, PyTorch, Transformers, PHP, JavaScript, React, Node.js, PostgreSQL, Docker, portfolio, Technocit&eacute;">
     <meta name="author" content="Sarah Tordeur">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     <link rel="canonical" href="https://sarahtordeur.dev/">
@@ -29,8 +29,8 @@
     <!-- ===== Open Graph (LinkedIn, WhatsApp, Facebook) ===== -->
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://sarahtordeur.dev/">
-    <meta property="og:title" content="Sarah Tordeur | D&eacute;veloppeuse Full Stack, Angular &amp; FHIR">
-    <meta property="og:description" content="Stage chez Iderys : conception d'une interface MPI en Angular, FHIR R4 et IRIS for Health, avec fusion de dossiers patients et recherche s&eacute;mantique.">
+    <meta property="og:title" content="Sarah Tordeur | Full Stack, IA m&eacute;dicale, Angular &amp; FHIR">
+    <meta property="og:description" content="MPI Angular et FHIR chez Iderys, compl&eacute;t&eacute; par une initiative personnelle : un RAG m&eacute;dical local avec BioBERT, FAISS et IRIS Vector Search.">
     <meta property="og:image" content="https://sarahtordeur.dev/assets/iderys_mpi/mpi-doublon-evaluer.png">
     <meta property="og:image:alt" content="Capture r&eacute;elle de l'interface d'&eacute;valuation de doublons patients d&eacute;velopp&eacute;e pendant le stage chez Iderys">
     <meta property="og:image:width" content="3014">
@@ -40,8 +40,8 @@
     <meta property="profile:first_name" content="Sarah">
     <meta property="profile:last_name" content="Tordeur">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sarah Tordeur | D&eacute;veloppeuse Full Stack, Angular &amp; FHIR">
-    <meta name="twitter:description" content="Application MPI, Angular, FHIR R4, IRIS for Health et recherche s&eacute;mantique : les avanc&eacute;es de mon stage chez Iderys.">
+    <meta name="twitter:title" content="Sarah Tordeur | Full Stack &amp; IA m&eacute;dicale">
+    <meta name="twitter:description" content="MPI Angular/FHIR et RAG m&eacute;dical on-premise : BioBERT, FAISS, IRIS Vector Search, reranking et QA extractive.">
     <meta name="twitter:image" content="https://sarahtordeur.dev/assets/iderys_mpi/mpi-doublon-evaluer.png">
 
     <!-- ===== Donn&eacute;es structur&eacute;es JSON-LD ===== -->
@@ -59,7 +59,7 @@
       {
         "@context": "https://schema.org",
         "@type": "ProfilePage",
-        "dateModified": "2026-06-12",
+        "dateModified": "2026-06-14",
         "mainEntity": {
           "@type": "Person",
           "@id": "https://sarahtordeur.dev/#sarah-tordeur",
@@ -81,7 +81,8 @@
             "Firebase", "NativeWind", "Docker", "HTML5", "CSS3", "Tailwind CSS",
             "MongoDB", "SQLite", "Git", "Java", "C++",
             "FHIR R4", "HL7", "IRIS for Health", "InterSystems ObjectScript", "Master Patient Index",
-            "Sentence-Transformers", "Recherche vectorielle", "RxJS", "Angular CDK", "TanStack Query"
+            "Sentence-Transformers", "Recherche vectorielle", "Retrieval-Augmented Generation", "BioBERT",
+            "FAISS", "BM25", "PyTorch", "Transformers", "NLP m\u00e9dical", "RxJS", "Angular CDK", "TanStack Query"
           ],
           "knowsLanguage": [
             { "@type": "Language", "name": "Fran\u00e7ais" },
@@ -134,6 +135,18 @@
             "@type": "ListItem",
             "position": 2,
             "item": {
+              "@type": "SoftwareApplication",
+              "name": "Medical RAG \u2014 initiative personnelle chez Iderys",
+              "description": "Pipeline RAG m\u00e9dical local : anonymisation, embeddings BioBERT, recherche FAISS ou IRISVector, reranking, question-r\u00e9ponse extractive et \u00e9valuation MRR, Recall et NDCG.",
+              "applicationCategory": "HealthApplication",
+              "operatingSystem": "On-premise",
+              "author": { "@type": "Person", "name": "Sarah Tordeur" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
               "@type": "WebApplication",
               "name": "Find My Roof",
               "description": "Plateforme full stack de recherche de logement. React, Vite, Node.js, PostgreSQL, Prisma, Cypress.",
@@ -143,7 +156,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 3,
+            "position": 4,
             "item": {
               "@type": "WebSite",
               "name": "mobertaimont.be",
@@ -154,7 +167,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 4,
+            "position": 5,
             "item": {
               "@type": "WebApplication",
               "name": "ERP Club de patinage \u2014 Axel Club Tournai",
@@ -165,7 +178,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 5,
+            "position": 6,
             "item": {
               "@type": "WebSite",
               "name": "Galerie d'art acrylique",
@@ -176,7 +189,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 6,
+            "position": 7,
             "item": {
               "@type": "WebApplication",
               "name": "Family Dashboard",
@@ -196,7 +209,7 @@
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -226,17 +239,18 @@
         <div class="hero-content">
             <p class="hero-greeting">Bonjour, je suis</p>
             <h1 class="hero-name">Sarah Tordeur &ndash; D&eacute;veloppeuse Full Stack &agrave; Mons (Belgique)</h1>
-            <h2 class="hero-title">D&eacute;veloppeuse Full Stack &middot; Angular &middot; FHIR</h2>
+            <h2 class="hero-title">D&eacute;veloppeuse Full Stack &middot; Angular &middot; FHIR &middot; IA m&eacute;dicale</h2>
             <p class="hero-description">
-                Passionn&eacute;e par le d&eacute;veloppement web, je con&ccedil;ois des applications
-                compl&egrave;tes du frontend au backend. Bas&eacute;e &agrave; Mons, Belgique.
+                Je con&ccedil;ois des applications compl&egrave;tes du frontend au backend, avec un int&eacute;r&ecirc;t particulier
+                pour l'interop&eacute;rabilit&eacute; des donn&eacute;es de sant&eacute;, la recherche vectorielle et le NLP m&eacute;dical.
+                Bas&eacute;e &agrave; Mons, Belgique.
             </p>
             <div class="hero-cta">
                 <a href="#projects" class="btn btn-primary">Voir mes projets</a>
                 <a href="#contact" class="btn btn-outline">Me contacter</a>
             </div>
             <div class="hero-tech-line">
-                <span>PHP</span><span>JavaScript</span><span>Python</span><span>SQL</span><span>Node.js</span><span>Docker</span>
+                <span>Angular</span><span>FHIR</span><span>Python</span><span>RAG</span><span>BioBERT</span><span>Docker</span>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -417,6 +431,10 @@
                         <span class="skill-tag">HL7 v2</span>
                         <span class="skill-tag">MPI</span>
                         <span class="skill-tag">Sentence-Transformers</span>
+                        <span class="skill-tag">BioBERT</span>
+                        <span class="skill-tag">FAISS</span>
+                        <span class="skill-tag">BM25</span>
+                        <span class="skill-tag">PyTorch</span>
                         <span class="skill-tag">IRIS Vector Search</span>
                         <span class="skill-tag">IntegratedML</span>
                     </div>
@@ -482,10 +500,6 @@
                             <figure>
                                 <img src="assets/iderys_mpi/mpi-fiche-patient.png" alt="Fiche d&eacute;tail d'un patient avec compteurs de conditions, observations et m&eacute;dications" loading="lazy" width="1543" height="894">
                                 <figcaption>Fiche patient &mdash; donn&eacute;es FHIR et ressources li&eacute;es</figcaption>
-                            </figure>
-                            <figure>
-                                <img src="assets/iderys_mpi/mpi-chatbot-contexte-en.png" alt="Chatbot MPI r&eacute;pondant &agrave; des questions sur un patient (date de naissance, m&eacute;dication, &eacute;tat civil)" loading="lazy" width="1543" height="894">
-                                <figcaption>Chatbot MPI &mdash; contexte patient conserv&eacute; entre les questions</figcaption>
                             </figure>
                             <figure>
                                 <img src="assets/iderys_mpi/mpi-conditions-patient.png" alt="Vue des conditions m&eacute;dicales d'un patient : diagnostics, statuts cliniques et dates" loading="lazy" width="1543" height="894">
@@ -567,6 +581,100 @@
                         <span>Sentence-Transformers</span><span>Docker</span><span>Bruno</span>
                     </div>
                     <span class="project-date">Mai &mdash; juin 2026</span>
+                </article>
+
+                <!-- Initiative personnelle pendant le stage Iderys - Medical RAG -->
+                <article class="project-card featured project-main rag-project">
+                    <div class="project-header">
+                        <div class="project-icon" aria-hidden="true">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3h6v4H9z"/><path d="M10 7v4.5L5.5 19a1.3 1.3 0 0 0 1.1 2h10.8a1.3 1.3 0 0 0 1.1-2L14 11.5V7"/><path d="M8 16h8"/></svg>
+                        </div>
+                    </div>
+                    <div class="project-badges">
+                        <span class="project-badge">Initiative personnelle</span>
+                        <span class="project-badge project-badge-alt">Recherche &amp; d&eacute;veloppement men&eacute;e pendant le stage chez Iderys</span>
+                    </div>
+                    <h3 class="project-name">Medical RAG &mdash; recherche s&eacute;mantique et QA m&eacute;dicale locale</h3>
+                    <p class="project-description stage-intro">
+                        Conception autonome d'un pipeline de <strong>Retrieval-Augmented Generation</strong> pour interroger
+                        des documents m&eacute;dicaux en fran&ccedil;ais. Le syst&egrave;me pr&eacute;traite et anonymise les sources,
+                        calcule des embeddings avec <strong>BioBERT</strong>, retrouve les passages pertinents dans
+                        <strong>FAISS</strong> ou <strong>IRISVector</strong>, puis produit une r&eacute;ponse extractive sourc&eacute;e.
+                        L'architecture est pens&eacute;e pour un fonctionnement <strong>on-premise</strong>, sans sortie des donn&eacute;es sensibles.
+                    </p>
+
+                    <div class="rag-architecture" aria-label="Architecture du pipeline Medical RAG">
+                        <div class="rag-step"><span>01</span><strong>Ingestion</strong><small>TXT, PDF, FHIR R4</small></div>
+                        <div class="rag-arrow" aria-hidden="true">&rarr;</div>
+                        <div class="rag-step"><span>02</span><strong>Pr&eacute;traitement</strong><small>Nettoyage, anonymisation, chunks</small></div>
+                        <div class="rag-arrow" aria-hidden="true">&rarr;</div>
+                        <div class="rag-step"><span>03</span><strong>Embeddings</strong><small>BioBERT, vecteurs 768D, norme L2</small></div>
+                        <div class="rag-arrow" aria-hidden="true">&rarr;</div>
+                        <div class="rag-step"><span>04</span><strong>Retrieval</strong><small>Top-10 FAISS / IRISVector</small></div>
+                        <div class="rag-arrow" aria-hidden="true">&rarr;</div>
+                        <div class="rag-step"><span>05</span><strong>Reranking</strong><small>Cross-encoder, top-3</small></div>
+                        <div class="rag-arrow" aria-hidden="true">&rarr;</div>
+                        <div class="rag-step"><span>06</span><strong>R&eacute;ponse</strong><small>BM25 + NanoNN, sources</small></div>
+                    </div>
+
+                    <div class="rag-results" aria-label="R&eacute;sultats d'&eacute;valuation du Medical RAG">
+                        <div><strong>87,4 %</strong><span>MRR@10</span></div>
+                        <div><strong>92,3 %</strong><span>Recall@5</span></div>
+                        <div><strong>100 %</strong><span>Recall@10</span></div>
+                        <div><strong>90,2 %</strong><span>NDCG@10</span></div>
+                    </div>
+                    <p class="rag-evaluation-note">Mesures obtenues sur le jeu de test du prototype (13 requ&ecirc;tes). Elles &eacute;valuent la qualit&eacute; du retrieval, pas la validit&eacute; clinique d'un diagnostic.</p>
+
+                    <div class="rag-details">
+                        <section class="rag-panel" aria-labelledby="rag-maths-title">
+                            <h4 id="rag-maths-title">Concepts math&eacute;matiques mobilis&eacute;s</h4>
+                            <dl class="math-list">
+                                <div>
+                                    <dt>Similarit&eacute; cosinus</dt>
+                                    <dd><code>cos(q,d) = (q &middot; d) / (||q|| ||d||)</code> pour comparer requ&ecirc;tes et passages dans l'espace vectoriel.</dd>
+                                </div>
+                                <div>
+                                    <dt>Normalisation L2 &amp; produit scalaire</dt>
+                                    <dd>Apr&egrave;s normalisation des embeddings, le produit scalaire utilis&eacute; par FAISS &eacute;quivaut &agrave; la similarit&eacute; cosinus.</dd>
+                                </div>
+                                <div>
+                                    <dt>Apprentissage contrastif</dt>
+                                    <dd>MNRL / InfoNCE rapprochent les paires positives et &eacute;loignent les n&eacute;gatifs du batch, avec temp&eacute;rature configurable.</dd>
+                                </div>
+                                <div>
+                                    <dt>BM25 &amp; TF-IDF probabiliste</dt>
+                                    <dd>Score lexical tenant compte de la fr&eacute;quence des termes, de leur raret&eacute; et de la longueur des phrases.</dd>
+                                </div>
+                                <div>
+                                    <dt>R&eacute;seau de neurones</dt>
+                                    <dd>MLP NanoNN en Python pur : initialisation Xavier, activations ReLU/sigmo&iuml;de et descente de gradient stochastique.</dd>
+                                </div>
+                                <div>
+                                    <dt>M&eacute;triques de ranking</dt>
+                                    <dd>MRR mesure le rang du premier r&eacute;sultat pertinent, Recall la couverture du top-k et NDCG la qualit&eacute; de l'ordre.</dd>
+                                </div>
+                            </dl>
+                        </section>
+
+                        <section class="rag-panel" aria-labelledby="rag-engineering-title">
+                            <h4 id="rag-engineering-title">Ing&eacute;nierie &amp; contraintes sant&eacute;</h4>
+                            <ul class="rag-feature-list">
+                                <li><strong>Bi-encodeur finetun&eacute;</strong> avec AdamW, warmup cosinus, gradient clipping et meilleur checkpoint selon MRR@10.</li>
+                                <li><strong>Vector store interchangeable</strong> : IndexFlatIP / IVFFlat avec FAISS en local, recherche SQL vectorielle avec IRIS for Health.</li>
+                                <li><strong>QA extractive explicable</strong> : s&eacute;lection de phrases par BM25, huit features et NanoNN, sans g&eacute;n&eacute;ration obligatoire.</li>
+                                <li><strong>Protection des donn&eacute;es</strong> : anonymisation des NISS, noms, dates et t&eacute;l&eacute;phones avant indexation.</li>
+                                <li><strong>Interop&eacute;rabilit&eacute;</strong> : chargeur de ressources FHIR R4 depuis l'API REST d'IRIS for Health.</li>
+                                <li><strong>Garde-fou</strong> : r&eacute;ponses fond&eacute;es sur le contexte, sources conserv&eacute;es et absence de diagnostic d&eacute;finitif.</li>
+                            </ul>
+                        </section>
+                    </div>
+
+                    <div class="project-tech">
+                        <span>Python</span><span>PyTorch</span><span>Transformers</span><span>BioBERT</span>
+                        <span>Sentence-Transformers</span><span>FAISS</span><span>IRISVector</span><span>FHIR R4</span>
+                        <span>BM25</span><span>NanoNN</span><span>Hugging Face</span><span>YAML</span>
+                    </div>
+                    <span class="project-date">Juin 2026</span>
                 </article>
 
                 <!-- Project Find My Roof -->
