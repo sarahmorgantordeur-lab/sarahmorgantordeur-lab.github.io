@@ -1755,7 +1755,7 @@ img {
     color: var(--text-primary);
 }
 
-/* Formulaire — même carte que skill-category / project-card */
+/* Formulaire - même carte que skill-category / project-card */
 .contact-form {
     background: var(--bg-card);
     border: 1px solid var(--border);
@@ -1799,7 +1799,7 @@ img {
     color: var(--accent);
 }
 
-/* Inputs — même style de fond que le terminal */
+/* Inputs - même style de fond que le terminal */
 .form-group input,
 .form-group textarea {
     background: var(--bg-primary);
@@ -1847,7 +1847,7 @@ img {
     display: block;
 }
 
-/* Bouton — même style que btn-primary dans le hero */
+/* Bouton - même style que btn-primary dans le hero */
 .btn-submit {
     align-self: flex-start;
     cursor: pointer;
@@ -1881,7 +1881,7 @@ img {
     to { transform: rotate(360deg); }
 }
 
-/* Feedbacks — même style que les badges WIP/success */
+/* Feedbacks - même style que les badges WIP/success */
 .form-feedback {
     display: flex;
     align-items: center;
