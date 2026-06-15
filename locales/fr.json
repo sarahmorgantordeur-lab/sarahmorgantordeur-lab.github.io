@@ -1,0 +1,52 @@
+{
+  "locale": "fr",
+  "documentTitle": "Sarah Tordeur | Full Stack & IA médicale à Mons",
+  "text": {},
+  "attributes": {
+    "meta[name='description']": {
+      "content": "Portfolio de Sarah Tordeur : MPI Angular/FHIR chez Iderys et Medical RAG local avec index BM25 pur Python, NanoNN et QA extractive explicable."
+    },
+    "meta[property='og:title']": {
+      "content": "Sarah Tordeur | Full Stack & IA médicale"
+    },
+    "meta[property='og:description']": {
+      "content": "Découvrez mon MPI Angular/FHIR et mon Medical RAG on-premise : index BM25 pur Python, scoring de phrases et QA extractive explicable."
+    },
+    "meta[name='twitter:title']": {
+      "content": "Sarah Tordeur | Full Stack & IA médicale"
+    },
+    "meta[name='twitter:description']": {
+      "content": "MPI Angular/FHIR et Medical RAG local : index BM25 pur Python, SentenceScorer, NanoNN et QA extractive sourcée."
+    },
+    "#languageSelect": { "aria-label": "Choisir la langue" },
+    ".navbar": { "aria-label": "Navigation principale" },
+    ".nav-logo": { "aria-label": "Sarah Tordeur - Accueil" },
+    "#navToggle": { "aria-label": "Menu" },
+    "#about": { "aria-label": "À propos de moi" },
+    "#skills": { "aria-label": "Compétences techniques" },
+    "#projects": { "aria-label": "Projets réalisés" },
+    ".stage-highlights": { "aria-label": "Avancées réalisées pendant le stage" },
+    ".stage-roadmap": { "aria-label": "Avancées prévues" },
+    ".ai-lab": { "aria-label": "Architecture visuelle du pipeline d'intelligence artificielle Medical RAG" },
+    ".rag-results": { "aria-label": "Caractéristiques techniques du Medical RAG" },
+    "#education": { "aria-label": "Parcours et formations" },
+    "#contactForm": { "aria-label": "Formulaire de contact" },
+    "#name": { "placeholder": "Jean Dupont" },
+    "#email": { "placeholder": "jean@exemple.com" },
+    "#subject": { "placeholder": "Proposition de poste, collaboration..." },
+    "#message": { "placeholder": "Bonjour Sarah, je souhaite..." },
+    ".project-link-icon": { "title": "Voir le site" },
+    "#modal": { "aria-label": "Visionneuse d'images" },
+    "#modalClose": { "aria-label": "Fermer" },
+    "#modalPrev": { "aria-label": "Image précédente" },
+    "#modalNext": { "aria-label": "Image suivante" },
+    "img[src='assets/iderys_mpi/mpi-tableau-de-bord-multilingue.png']": { "alt": "Tableau de bord MPI avec sélecteur de langue ouvert" },
+    "img[src='assets/iderys_mpi/mpi-liste-patients.png']": { "alt": "Liste des patients avec tri, pagination et actions CRUD" },
+    "img[src='assets/iderys_mpi/mpi-fiche-patient.png']": { "alt": "Fiche détaillée d'un patient avec ses ressources médicales" },
+    "img[src='assets/iderys_mpi/mpi-conditions-patient.png']": { "alt": "Conditions médicales d'un patient" },
+    "img[src='assets/iderys_mpi/mpi-doublons-liste.png']": { "alt": "Liste des dossiers patients en double" },
+    "img[src='assets/iderys_mpi/mpi-doublon-evaluer.png']": { "alt": "Évaluation et comparaison d'un doublon patient" },
+    "img[src='assets/iderys_mpi/mpi-doublon-evalue.png']": { "alt": "Historique d'un doublon patient évalué" },
+    "img[src='assets/iderys_mpi/mpi-agenda.png']": { "alt": "Agenda des rendez-vous" }
+  }
+}

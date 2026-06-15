@@ -1,3 +1,82 @@
+// ===== Internationalisation =====
+const languageSelect = document.getElementById('languageSelect');
+const translationCache = new Map();
+const originalText = new WeakMap();
+const originalAttributes = new Map();
+let languageRequestId = 0;
+
+function normalizeText(value) {
+    return value.replace(/\s+/g, ' ').trim();
+}
+
+function getTranslatableTextNodes() {
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+        acceptNode(node) {
+            const parent = node.parentElement;
+            if (!parent || parent.closest('script, style, svg')) return NodeFilter.FILTER_REJECT;
+            return normalizeText(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+        }
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    return nodes;
+}
+
+const translatableTextNodes = getTranslatableTextNodes();
+translatableTextNodes.forEach(node => originalText.set(node, node.nodeValue));
+
+async function loadTranslations(language) {
+    if (translationCache.has(language)) return translationCache.get(language);
+    const response = await fetch(`locales/${language}.json`);
+    if (!response.ok) throw new Error(`Unable to load locale: ${language}`);
+    const translations = await response.json();
+    translationCache.set(language, translations);
+    return translations;
+}
+
+function applyAttributeTranslations(attributes = {}) {
+    Object.entries(attributes).forEach(([selector, values]) => {
+        document.querySelectorAll(selector).forEach((element, index) => {
+            Object.entries(values).forEach(([attribute, translatedValue]) => {
+                const key = `${selector}:${index}:${attribute}`;
+                if (!originalAttributes.has(key)) {
+                    originalAttributes.set(key, element.getAttribute(attribute) || '');
+                }
+                element.setAttribute(attribute, translatedValue);
+            });
+        });
+    });
+}
+
+async function setLanguage(language) {
+    const selectedLanguage = ['fr', 'en'].includes(language) ? language : 'fr';
+    const requestId = ++languageRequestId;
+
+    try {
+        const translations = await loadTranslations(selectedLanguage);
+        if (requestId !== languageRequestId) return;
+        translatableTextNodes.forEach(node => {
+            const source = originalText.get(node);
+            const key = normalizeText(source);
+            const translated = translations.text[key] || key;
+            const leading = source.match(/^\s*/)?.[0] || '';
+            const trailing = source.match(/\s*$/)?.[0] || '';
+            node.nodeValue = `${leading}${translated}${trailing}`;
+        });
+
+        applyAttributeTranslations(translations.attributes);
+        document.documentElement.lang = translations.locale;
+        document.title = translations.documentTitle;
+        languageSelect.value = selectedLanguage;
+        localStorage.setItem('portfolio-language', selectedLanguage);
+    } catch (error) {
+        console.error('i18n:', error);
+    }
+}
+
+languageSelect.addEventListener('change', event => setLanguage(event.target.value));
+setLanguage(localStorage.getItem('portfolio-language') || 'fr');
+
 // ===== Navbar scroll effect =====
 const navbar = document.getElementById('navbar');
 

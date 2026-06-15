@@ -10,8 +10,8 @@
 
     <!-- ===== SEO de base ===== -->
     <title>Sarah Tordeur | Full Stack &amp; IA m&eacute;dicale &agrave; Mons</title>
-    <meta name="description" content="Portfolio de Sarah Tordeur : MPI Angular/FHIR chez Iderys et Medical RAG local avec BioBERT, FAISS, IRISVector, BioMistral, Ollama et QA extractive.">
-    <meta name="keywords" content="Sarah Tordeur, d&eacute;veloppeuse full stack Mons, IA m&eacute;dicale, Medical RAG, Retrieval-Augmented Generation, LLM local, BioBERT, BioMistral, Ollama, FAISS, IRISVector, recherche s&eacute;mantique, embeddings, QA extractive, BM25, Angular, TypeScript, FHIR R4, HL7, Master Patient Index, MPI, IRIS for Health, InterSystems, Python, PyTorch, Transformers, Docker, portfolio d&eacute;veloppeuse Belgique">
+    <meta name="description" content="Portfolio de Sarah Tordeur : MPI Angular/FHIR chez Iderys et Medical RAG local avec index BM25 pur Python, NanoNN et QA extractive explicable.">
+    <meta name="keywords" content="Sarah Tordeur, d&eacute;veloppeuse full stack Mons, IA m&eacute;dicale, Medical RAG, Retrieval-Augmented Generation, BM25 pur Python, index invers&eacute;, recherche lexicale, QA extractive, SentenceScorer, NanoNN, NLP m&eacute;dical, Angular, TypeScript, FHIR R4, HL7, Master Patient Index, MPI, IRIS for Health, InterSystems, Python, Docker, portfolio d&eacute;veloppeuse Belgique">
     <meta name="author" content="Sarah Tordeur">
     <meta name="application-name" content="Portfolio Sarah Tordeur">
     <meta name="language" content="fr-BE">
@@ -32,7 +32,7 @@
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://sarahtordeur.dev/">
     <meta property="og:title" content="Sarah Tordeur | Full Stack &amp; IA m&eacute;dicale">
-    <meta property="og:description" content="D&eacute;couvrez mon MPI Angular/FHIR et mon Medical RAG on-premise : BioBERT, recherche vectorielle, reranking et LLM local.">
+    <meta property="og:description" content="D&eacute;couvrez mon MPI Angular/FHIR et mon Medical RAG on-premise : index BM25 pur Python, scoring de phrases et QA extractive explicable.">
     <meta property="og:image" content="https://sarahtordeur.dev/assets/iderys_mpi/mpi-doublon-evaluer.png">
     <meta property="og:image:alt" content="Capture r&eacute;elle de l'interface d'&eacute;valuation de doublons patients d&eacute;velopp&eacute;e pendant le stage chez Iderys">
     <meta property="og:image:width" content="3014">
@@ -44,7 +44,7 @@
     <meta property="profile:last_name" content="Tordeur">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sarah Tordeur | Full Stack &amp; IA m&eacute;dicale">
-    <meta name="twitter:description" content="MPI Angular/FHIR et Medical RAG local : BioBERT, FAISS, IRISVector, reranking, BioMistral, Ollama et QA extractive.">
+    <meta name="twitter:description" content="MPI Angular/FHIR et Medical RAG local : index BM25 pur Python, SentenceScorer, NanoNN et QA extractive sourc&eacute;e.">
     <meta name="twitter:image" content="https://sarahtordeur.dev/assets/iderys_mpi/mpi-doublon-evaluer.png">
     <meta name="twitter:image:alt" content="Interface de comparaison de dossiers patients du projet MPI d&eacute;velopp&eacute; par Sarah Tordeur chez Iderys">
 
@@ -63,7 +63,7 @@
       {
         "@context": "https://schema.org",
         "@type": "ProfilePage",
-        "dateModified": "2026-06-14",
+        "dateModified": "2026-06-15",
         "mainEntity": {
           "@type": "Person",
           "@id": "https://sarahtordeur.dev/#sarah-tordeur",
@@ -85,10 +85,10 @@
             "Firebase", "NativeWind", "Docker", "HTML5", "CSS3", "Tailwind CSS",
             "MongoDB", "SQLite", "Git", "Java", "C++",
             "FHIR R4", "HL7", "IRIS for Health", "InterSystems ObjectScript", "Master Patient Index",
-            "Sentence-Transformers", "Recherche vectorielle", "Retrieval-Augmented Generation", "BioBERT",
-            "FAISS", "IRISVector", "BM25", "PyTorch", "Transformers", "NLP m\u00e9dical",
-            "Large Language Models", "BioMistral", "Ollama", "Question-r\u00e9ponse extractive",
-            "Apprentissage contrastif", "Similarit\u00e9 cosinus", "RxJS", "Angular CDK", "TanStack Query"
+            "Sentence-Transformers", "Recherche vectorielle", "Retrieval-Augmented Generation",
+            "BM25", "Index invers\u00e9", "NanoNN", "SentenceScorer", "NLP m\u00e9dical",
+            "Question-r\u00e9ponse extractive", "TF-IDF", "Recherche lexicale",
+            "RxJS", "Angular CDK", "TanStack Query"
           ],
           "knowsLanguage": [
             { "@type": "Language", "name": "Fran\u00e7ais" },
@@ -145,18 +145,18 @@
             "item": {
               "@type": "SoftwareApplication",
               "name": "Medical RAG - initiative personnelle chez Iderys",
-              "description": "Pipeline Medical RAG on-premise : anonymisation, embeddings BioBERT, recherche FAISS ou IRISVector, reranking, QA extractive, BioMistral ou Ollama et \u00e9valuation MRR, Recall et NDCG.",
+              "description": "Pipeline Medical RAG on-premise sans d\u00e9pendance ML lourde : anonymisation, index BM25 pur Python, classement lexical et question-r\u00e9ponse extractive avec SentenceScorer et NanoNN.",
               "applicationCategory": "HealthApplication",
               "operatingSystem": "On-premise",
               "programmingLanguage": "Python",
-              "keywords": "Medical RAG, BioBERT, BioMistral, Ollama, FAISS, IRISVector, BM25, FHIR R4, LLM local, NLP m\u00e9dical",
+              "keywords": "Medical RAG, BM25 pur Python, index invers\u00e9, SentenceScorer, NanoNN, FHIR R4, QA extractive, NLP m\u00e9dical",
               "featureList": [
                 "Anonymisation des donn\u00e9es m\u00e9dicales",
-                "Embeddings BioBERT en 768 dimensions",
-                "Recherche vectorielle FAISS ou IRISVector",
-                "Reranking par cross-encodeur",
+                "Index lexical BM25 impl\u00e9ment\u00e9 en Python standard",
+                "Classement des passages par TF, IDF et normalisation de longueur",
+                "Aucune d\u00e9pendance PyTorch, Transformers ou FAISS",
                 "Question-r\u00e9ponse extractive avec BM25 et NanoNN",
-                "G\u00e9n\u00e9ration locale optionnelle avec BioMistral ou Ollama",
+                "Scoring de phrases fond\u00e9 sur huit caract\u00e9ristiques",
                 "R\u00e9ponses sourc\u00e9es avec avertissement m\u00e9dical"
               ],
               "author": { "@type": "Person", "name": "Sarah Tordeur" }
@@ -236,18 +236,30 @@
     <nav class="navbar" id="navbar" aria-label="Navigation principale">
         <div class="nav-container">
             <a href="#hero" class="nav-logo" aria-label="Sarah Tordeur - Accueil">&lt;ST /&gt;</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#about" class="nav-link">A propos</a></li>
+                <li><a href="#about" class="nav-link">&Agrave; propos</a></li>
                 <li><a href="#skills" class="nav-link">Comp&eacute;tences</a></li>
                 <li><a href="#projects" class="nav-link">Projets</a></li>
                 <li><a href="#education" class="nav-link">Formations</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="nav-actions">
+                <label class="language-selector" for="languageSelect">
+                    <span class="language-icon" aria-hidden="true">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    </span>
+                    <span class="sr-only">Choisir la langue</span>
+                    <select id="languageSelect" aria-label="Choisir la langue">
+                        <option value="fr">FR</option>
+                        <option value="en">EN</option>
+                    </select>
+                </label>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -269,7 +281,7 @@
                 <a href="#contact" class="btn btn-outline">Me contacter</a>
             </div>
             <div class="hero-tech-line">
-                <span>Angular</span><span>FHIR</span><span>Python</span><span>RAG</span><span>BioBERT</span><span>Docker</span>
+                <span>Angular</span><span>FHIR</span><span>Python</span><span>RAG</span><span>BM25</span><span>Docker</span>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -280,9 +292,9 @@
     </section>
 
     <!-- About Section -->
-    <section class="section about" id="about" aria-label="A propos de moi">
+    <section class="section about" id="about" aria-label="&Agrave; propos de moi">
         <div class="container">
-            <h2 class="section-title">A propos de <span class="accent">moi</span></h2>
+            <h2 class="section-title">&Agrave; propos de <span class="accent">moi</span></h2>
             <div class="about-grid">
                 <div class="about-text">
                     <p>
@@ -450,10 +462,9 @@
                         <span class="skill-tag">HL7 v2</span>
                         <span class="skill-tag">MPI</span>
                         <span class="skill-tag">Sentence-Transformers</span>
-                        <span class="skill-tag">BioBERT</span>
-                        <span class="skill-tag">FAISS</span>
                         <span class="skill-tag">BM25</span>
-                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">NanoNN</span>
+                        <span class="skill-tag">QA extractive</span>
                         <span class="skill-tag">IRIS Vector Search</span>
                         <span class="skill-tag">IntegratedML</span>
                     </div>
@@ -607,12 +618,12 @@
                         <span class="project-badge">Initiative personnelle</span>
                         <span class="project-badge project-badge-alt">Recherche &amp; d&eacute;veloppement men&eacute;e pendant le stage chez Iderys</span>
                     </div>
-                    <h3 class="project-name">Medical RAG - recherche s&eacute;mantique et QA m&eacute;dicale locale</h3>
+                    <h3 class="project-name">Medical RAG avec BM25 pur Python - QA m&eacute;dicale locale</h3>
                     <p class="project-description stage-intro">
                         Conception autonome d'un pipeline de <strong>Retrieval-Augmented Generation</strong> pour interroger
                         des documents m&eacute;dicaux en fran&ccedil;ais. Le syst&egrave;me pr&eacute;traite et anonymise les sources,
-                        calcule des embeddings avec <strong>BioBERT</strong>, retrouve les passages pertinents dans
-                        <strong>FAISS</strong> ou <strong>IRISVector</strong>, puis produit une r&eacute;ponse extractive sourc&eacute;e.
+                        construit un <strong>index BM25 en Python standard</strong>, classe les passages selon leur pertinence
+                        lexicale, puis produit une r&eacute;ponse extractive sourc&eacute;e avec <strong>SentenceScorer</strong> et <strong>NanoNN</strong>.
                         L'architecture est pens&eacute;e pour un fonctionnement <strong>on-premise</strong>, sans sortie des donn&eacute;es sensibles.
                     </p>
 
@@ -637,66 +648,66 @@
                             <div class="ai-connector" aria-hidden="true"><span></span></div>
 
                             <div class="ai-core-wrap">
-                                <span class="ai-column-label">Intelligence s&eacute;mantique</span>
+                                <span class="ai-column-label">Indexation lexicale</span>
                                 <div class="ai-orbit ai-orbit-one"></div>
                                 <div class="ai-orbit ai-orbit-two"></div>
                                 <div class="ai-core">
                                     <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M9.5 4.5A3.5 3.5 0 0 0 6 8v1a3 3 0 0 0-1 5.83V16a4 4 0 0 0 4 4h1V4.5h-.5Z"/><path d="M14.5 4.5A3.5 3.5 0 0 1 18 8v1a3 3 0 0 1 1 5.83V16a4 4 0 0 1-4 4h-1V4.5h.5Z"/><path d="M6 9h2M16 9h2M7 15h3M14 15h3"/></svg>
-                                    <strong>BioBERT</strong>
-                                    <small>Embeddings 768D</small>
+                                    <strong>BM25</strong>
+                                    <small>Index pur Python &middot; stdlib</small>
                                 </div>
-                                <span class="ai-satellite satellite-top">norme L2</span>
-                                <span class="ai-satellite satellite-right">cosinus</span>
-                                <span class="ai-satellite satellite-bottom">MNRL</span>
+                                <span class="ai-satellite satellite-top">TF</span>
+                                <span class="ai-satellite satellite-right">IDF</span>
+                                <span class="ai-satellite satellite-bottom">longueur</span>
                             </div>
 
                             <div class="ai-connector" aria-hidden="true"><span></span></div>
 
                             <div class="ai-retrieval">
                                 <span class="ai-column-label">Recherche</span>
-                                <div class="ai-engine ai-engine-active"><span>01</span><div><b>FAISS / IRISVector</b><small>Top-10 passages</small></div></div>
-                                <div class="ai-engine"><span>02</span><div><b>Cross-encoder</b><small>Reranking top-3</small></div></div>
-                                <div class="ai-engine"><span>03</span><div><b>BM25 + NanoNN</b><small>S&eacute;lection extractive</small></div></div>
+                                <div class="ai-engine ai-engine-active"><span>01</span><div><b>Tokenisation</b><small>Termes de la requ&ecirc;te</small></div></div>
+                                <div class="ai-engine"><span>02</span><div><b>Index BM25</b><small>Classement top-k</small></div></div>
+                                <div class="ai-engine"><span>03</span><div><b>SentenceScorer</b><small>Phrases les plus pertinentes</small></div></div>
                             </div>
                         </div>
 
-                        <div class="llm-layer">
+                        <div class="llm-layer answer-engine">
                             <div class="llm-heading">
                                 <span class="llm-icon" aria-hidden="true">&lt;/&gt;</span>
-                                <div><span>Couche de r&eacute;ponse</span><strong>LLM interchangeable selon le contexte de d&eacute;ploiement</strong></div>
+                                <div><span>Moteur de r&eacute;ponse</span><strong>Question-r&eacute;ponse extractive, locale et explicable</strong></div>
                             </div>
                             <div class="llm-options">
-                                <div class="llm-option selected"><span>Par d&eacute;faut</span><strong>Extractive QA</strong><small>BM25 + NanoNN &middot; explicable</small></div>
-                                <div class="llm-option"><span>Hugging Face</span><strong>BioMistral 7B</strong><small>G&eacute;n&eacute;ration m&eacute;dicale locale</small></div>
-                                <div class="llm-option"><span>Serveur local</span><strong>Ollama</strong><small>Mod&egrave;le configurable &middot; API locale</small></div>
+                                <div class="llm-option selected"><span>Scoring lexical</span><strong>BM25</strong><small>Fr&eacute;quence, raret&eacute; et longueur</small></div>
+                                <div class="llm-option"><span>8 caract&eacute;ristiques</span><strong>SentenceScorer</strong><small>Overlap, Jaccard, position, chiffres...</small></div>
+                                <div class="llm-option"><span>R&eacute;seau neuronal</span><strong>NanoNN</strong><small>MLP Python pur &middot; poids JSON</small></div>
                             </div>
-                            <div class="llm-output"><span class="llm-prompt">Question</span><i>&rarr;</i><span>Contexte top-3</span><i>&rarr;</i><strong>R&eacute;ponse + sources + avertissement</strong></div>
+                            <div class="llm-output"><span class="llm-prompt">Question</span><i>&rarr;</i><span>Contexte top-3</span><i>&rarr;</i><span>Phrases class&eacute;es</span><i>&rarr;</i><strong>R&eacute;ponse sourc&eacute;e + avertissement</strong></div>
                         </div>
                     </div>
 
-                    <div class="rag-results" aria-label="R&eacute;sultats d'&eacute;valuation du Medical RAG">
-                        <div class="rag-metric" style="--score: 87.4"><span class="metric-ring"><strong>87,4<small>%</small></strong></span><b>MRR@10</b><small>Rang du premier r&eacute;sultat pertinent</small></div>
-                        <div class="rag-metric" style="--score: 92.3"><span class="metric-ring"><strong>92,3<small>%</small></strong></span><b>Recall@5</b><small>R&eacute;sultat pertinent dans le top-5</small></div>
-                        <div class="rag-metric" style="--score: 100"><span class="metric-ring"><strong>100<small>%</small></strong></span><b>Recall@10</b><small>Couverture compl&egrave;te du jeu de test</small></div>
-                        <div class="rag-metric" style="--score: 90.2"><span class="metric-ring"><strong>90,2<small>%</small></strong></span><b>NDCG@10</b><small>Qualit&eacute; de l'ordre des r&eacute;sultats</small></div>
+                    <div class="rag-results" aria-label="Caract&eacute;ristiques techniques du Medical RAG">
+                        <div class="rag-metric" style="--score: 100"><span class="metric-ring"><strong>0<small> ML</small></strong></span><b>D&eacute;pendance lourde</b><small>Sans PyTorch, Transformers ni FAISS</small></div>
+                        <div class="rag-metric" style="--score: 100"><span class="metric-ring"><strong>100<small>%</small></strong></span><b>Python local</b><small>Index et scoring ex&eacute;cut&eacute;s sur le poste</small></div>
+                        <div class="rag-metric" style="--score: 100"><span class="metric-ring"><strong>8<small> features</small></strong></span><b>SentenceScorer</b><small>Signaux lexicaux et structurels explicables</small></div>
+                        <div class="rag-metric" style="--score: 100"><span class="metric-ring"><strong>3<small> sources</small></strong></span><b>Formats index&eacute;s</b><small>TXT, PDF pr&eacute;trait&eacute;s et ressources FHIR</small></div>
                     </div>
-                    <p class="rag-evaluation-note">Mesures obtenues sur le jeu de test du prototype (13 requ&ecirc;tes). Elles &eacute;valuent la qualit&eacute; du retrieval, pas la validit&eacute; clinique d'un diagnostic.</p>
+                    <p class="rag-evaluation-note">Les anciennes m&eacute;triques du pipeline vectoriel ne sont plus affich&eacute;es : le nouvel index BM25 devra &ecirc;tre r&eacute;&eacute;valu&eacute; s&eacute;par&eacute;ment.</p>
 
                     <div class="rag-details">
                         <section class="rag-panel" aria-labelledby="rag-maths-title">
                             <h4 id="rag-maths-title">Concepts math&eacute;matiques mobilis&eacute;s</h4>
                             <dl class="math-list">
                                 <div>
-                                    <dt>Similarit&eacute; cosinus</dt>
-                                    <dd><code>cos(q,d) = (q &middot; d) / (||q|| ||d||)</code> pour comparer requ&ecirc;tes et passages dans l'espace vectoriel.</dd>
+                                    <dt>Score BM25</dt>
+                                    <dd><code>score(q,d) = &Sigma; IDF(t) &middot; TF normalis&eacute;(t,d)</code> pour classer les passages selon la requ&ecirc;te.</dd>
                                 </div>
                                 <div>
-                                    <dt>Normalisation L2 &amp; produit scalaire</dt>
-                                    <dd>Apr&egrave;s normalisation des embeddings, le produit scalaire utilis&eacute; par FAISS &eacute;quivaut &agrave; la similarit&eacute; cosinus.</dd>
+                                    <dt>Inverse Document Frequency</dt>
+                                    <dd>L'IDF donne plus de poids aux termes rares dans le corpus et r&eacute;duit l'influence des mots tr&egrave;s fr&eacute;quents.</dd>
                                 </div>
                                 <div>
-                                    <dt>Apprentissage contrastif</dt>
-                                    <dd>MNRL / InfoNCE rapprochent les paires positives et &eacute;loignent les n&eacute;gatifs du batch, avec temp&eacute;rature configurable.</dd>
+                                    <dt>Normalisation de longueur</dt>
+                                    <dd>Les param&egrave;tres <code>k1</code> et <code>b</code> limitent la saturation de la fr&eacute;quence et corrigent la longueur des documents.</dd>
                                 </div>
                                 <div>
                                     <dt>BM25 &amp; TF-IDF probabiliste</dt>
@@ -716,8 +727,8 @@
                         <section class="rag-panel" aria-labelledby="rag-engineering-title">
                             <h4 id="rag-engineering-title">Ing&eacute;nierie &amp; contraintes sant&eacute;</h4>
                             <ul class="rag-feature-list">
-                                <li><strong>Bi-encodeur finetun&eacute;</strong> avec AdamW, warmup cosinus, gradient clipping et meilleur checkpoint selon MRR@10.</li>
-                                <li><strong>Vector store interchangeable</strong> : IndexFlatIP / IVFFlat avec FAISS en local, recherche SQL vectorielle avec IRIS for Health.</li>
+                                <li><strong>Index BM25 pur Python</strong> construit sur un index invers&eacute;, sans NumPy, PyTorch, Transformers ni FAISS.</li>
+                                <li><strong>Recherche lexicale explicable</strong> fond&eacute;e sur la fr&eacute;quence des termes, leur raret&eacute; et la normalisation de longueur.</li>
                                 <li><strong>QA extractive explicable</strong> : s&eacute;lection de phrases par BM25, huit features et NanoNN, sans g&eacute;n&eacute;ration obligatoire.</li>
                                 <li><strong>Protection des donn&eacute;es</strong> : anonymisation des NISS, noms, dates et t&eacute;l&eacute;phones avant indexation.</li>
                                 <li><strong>Interop&eacute;rabilit&eacute;</strong> : chargeur de ressources FHIR R4 depuis l'API REST d'IRIS for Health.</li>
@@ -727,9 +738,8 @@
                     </div>
 
                     <div class="project-tech">
-                        <span>Python</span><span>PyTorch</span><span>Transformers</span><span>BioBERT</span>
-                        <span>Sentence-Transformers</span><span>FAISS</span><span>IRISVector</span><span>FHIR R4</span>
-                        <span>BM25</span><span>NanoNN</span><span>Hugging Face</span><span>YAML</span>
+                        <span>Python stdlib</span><span>BM25</span><span>Index invers&eacute;</span><span>SentenceScorer</span>
+                        <span>NanoNN</span><span>FHIR R4</span><span>PyMuPDF</span><span>JSONL</span><span>YAML</span>
                     </div>
                     <span class="project-date">Juin 2026</span>
                 </article>
@@ -959,7 +969,7 @@
         </div>
     </section>
 
-    <!-- Education Section -->
+    <!-- Section Éducation -->
     <section class="section education" id="education" aria-label="Parcours et formations">
         <div class="container">
             <h2 class="section-title">Mon <span class="accent">parcours</span></h2>
