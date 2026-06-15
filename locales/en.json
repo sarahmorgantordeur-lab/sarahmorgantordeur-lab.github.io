@@ -267,13 +267,13 @@
     "#modalClose": { "aria-label": "Close" },
     "#modalPrev": { "aria-label": "Previous image" },
     "#modalNext": { "aria-label": "Next image" },
-    "img[src='assets/iderys_mpi/mpi-tableau-de-bord-multilingue.png']": { "alt": "MPI dashboard with the language selector open" },
-    "img[src='assets/iderys_mpi/mpi-liste-patients.png']": { "alt": "Patient list with sorting, pagination and CRUD actions" },
-    "img[src='assets/iderys_mpi/mpi-fiche-patient.png']": { "alt": "Detailed patient record with medical resources" },
-    "img[src='assets/iderys_mpi/mpi-conditions-patient.png']": { "alt": "Patient medical conditions" },
-    "img[src='assets/iderys_mpi/mpi-doublons-liste.png']": { "alt": "List of duplicate patient records" },
-    "img[src='assets/iderys_mpi/mpi-doublon-evaluer.png']": { "alt": "Review and comparison of a duplicate patient record" },
-    "img[src='assets/iderys_mpi/mpi-doublon-evalue.png']": { "alt": "Decision history for a reviewed duplicate patient record" },
-    "img[src='assets/iderys_mpi/mpi-agenda.png']": { "alt": "Appointment calendar" }
+    "img[src='assets/iderys_mpi/mpi-tableau-de-bord-multilingue.webp']": { "alt": "MPI dashboard with the language selector open" },
+    "img[src='assets/iderys_mpi/mpi-liste-patients.webp']": { "alt": "Patient list with sorting, pagination and CRUD actions" },
+    "img[src='assets/iderys_mpi/mpi-fiche-patient.webp']": { "alt": "Detailed patient record with medical resources" },
+    "img[src='assets/iderys_mpi/mpi-conditions-patient.webp']": { "alt": "Patient medical conditions" },
+    "img[src='assets/iderys_mpi/mpi-doublons-liste.webp']": { "alt": "List of duplicate patient records" },
+    "img[src='assets/iderys_mpi/mpi-doublon-evaluer.webp']": { "alt": "Review and comparison of a duplicate patient record" },
+    "img[src='assets/iderys_mpi/mpi-doublon-evalue.webp']": { "alt": "Decision history for a reviewed duplicate patient record" },
+    "img[src='assets/iderys_mpi/mpi-agenda.webp']": { "alt": "Appointment calendar" }
   }
 }

@@ -40,13 +40,13 @@
     "#modalClose": { "aria-label": "Fermer" },
     "#modalPrev": { "aria-label": "Image précédente" },
     "#modalNext": { "aria-label": "Image suivante" },
-    "img[src='assets/iderys_mpi/mpi-tableau-de-bord-multilingue.png']": { "alt": "Tableau de bord MPI avec sélecteur de langue ouvert" },
-    "img[src='assets/iderys_mpi/mpi-liste-patients.png']": { "alt": "Liste des patients avec tri, pagination et actions CRUD" },
-    "img[src='assets/iderys_mpi/mpi-fiche-patient.png']": { "alt": "Fiche détaillée d'un patient avec ses ressources médicales" },
-    "img[src='assets/iderys_mpi/mpi-conditions-patient.png']": { "alt": "Conditions médicales d'un patient" },
-    "img[src='assets/iderys_mpi/mpi-doublons-liste.png']": { "alt": "Liste des dossiers patients en double" },
-    "img[src='assets/iderys_mpi/mpi-doublon-evaluer.png']": { "alt": "Évaluation et comparaison d'un doublon patient" },
-    "img[src='assets/iderys_mpi/mpi-doublon-evalue.png']": { "alt": "Historique d'un doublon patient évalué" },
-    "img[src='assets/iderys_mpi/mpi-agenda.png']": { "alt": "Agenda des rendez-vous" }
+    "img[src='assets/iderys_mpi/mpi-tableau-de-bord-multilingue.webp']": { "alt": "Tableau de bord MPI avec sélecteur de langue ouvert" },
+    "img[src='assets/iderys_mpi/mpi-liste-patients.webp']": { "alt": "Liste des patients avec tri, pagination et actions CRUD" },
+    "img[src='assets/iderys_mpi/mpi-fiche-patient.webp']": { "alt": "Fiche détaillée d'un patient avec ses ressources médicales" },
+    "img[src='assets/iderys_mpi/mpi-conditions-patient.webp']": { "alt": "Conditions médicales d'un patient" },
+    "img[src='assets/iderys_mpi/mpi-doublons-liste.webp']": { "alt": "Liste des dossiers patients en double" },
+    "img[src='assets/iderys_mpi/mpi-doublon-evaluer.webp']": { "alt": "Évaluation et comparaison d'un doublon patient" },
+    "img[src='assets/iderys_mpi/mpi-doublon-evalue.webp']": { "alt": "Historique d'un doublon patient évalué" },
+    "img[src='assets/iderys_mpi/mpi-agenda.webp']": { "alt": "Agenda des rendez-vous" }
   }
 }
