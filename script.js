@@ -1,5 +1,5 @@
 // ===== Internationalisation =====
-const languageSelect = document.getElementById('languageSelect');
+const languageButtons = [...document.querySelectorAll('.language-option')];
 const translationCache = new Map();
 const originalText = new WeakMap();
 const originalAttributes = new Map();
@@ -27,11 +27,42 @@ translatableTextNodes.forEach(node => originalText.set(node, node.nodeValue));
 
 async function loadTranslations(language) {
     if (translationCache.has(language)) return translationCache.get(language);
-    const response = await fetch(`locales/${language}.json`);
+
+    const embeddedTranslations = window.PORTFOLIO_TRANSLATIONS?.[language];
+    if (embeddedTranslations) {
+        translationCache.set(language, embeddedTranslations);
+        return embeddedTranslations;
+    }
+
+    const response = await fetch(new URL(`locales/${language}.json`, document.baseURI));
     if (!response.ok) throw new Error(`Unable to load locale: ${language}`);
     const translations = await response.json();
     translationCache.set(language, translations);
     return translations;
+}
+
+function getStoredLanguage() {
+    try {
+        return localStorage.getItem('portfolio-language');
+    } catch {
+        return null;
+    }
+}
+
+function storeLanguage(language) {
+    try {
+        localStorage.setItem('portfolio-language', language);
+    } catch {
+        // Storage can be unavailable for local files or restricted browsers.
+    }
+}
+
+function updateLanguageButtons(language) {
+    languageButtons.forEach(button => {
+        const isActive = button.dataset.language === language;
+        button.classList.toggle('active', isActive);
+        button.setAttribute('aria-pressed', String(isActive));
+    });
 }
 
 function applyAttributeTranslations(attributes = {}) {
@@ -67,15 +98,17 @@ async function setLanguage(language) {
         applyAttributeTranslations(translations.attributes);
         document.documentElement.lang = translations.locale;
         document.title = translations.documentTitle;
-        languageSelect.value = selectedLanguage;
-        localStorage.setItem('portfolio-language', selectedLanguage);
+        updateLanguageButtons(selectedLanguage);
+        storeLanguage(selectedLanguage);
     } catch (error) {
         console.error('i18n:', error);
     }
 }
 
-languageSelect.addEventListener('change', event => setLanguage(event.target.value));
-setLanguage(localStorage.getItem('portfolio-language') || 'fr');
+languageButtons.forEach(button => {
+    button.addEventListener('click', () => setLanguage(button.dataset.language));
+});
+setLanguage(getStoredLanguage() || 'fr');
 
 // ===== Navbar scroll effect =====
 const navbar = document.getElementById('navbar');

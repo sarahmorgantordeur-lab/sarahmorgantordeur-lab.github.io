@@ -18,7 +18,7 @@
     "meta[name='twitter:description']": {
       "content": "MPI Angular/FHIR et Medical RAG local : index BM25 pur Python, SentenceScorer, NanoNN et QA extractive sourcée."
     },
-    "#languageSelect": { "aria-label": "Choisir la langue" },
+    ".language-switcher": { "aria-label": "Choisir la langue" },
     ".navbar": { "aria-label": "Navigation principale" },
     ".nav-logo": { "aria-label": "Sarah Tordeur - Accueil" },
     "#navToggle": { "aria-label": "Menu" },

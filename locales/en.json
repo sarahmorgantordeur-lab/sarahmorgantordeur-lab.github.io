@@ -2,7 +2,6 @@
   "locale": "en",
   "documentTitle": "Sarah Tordeur | Full Stack & Medical AI Developer",
   "text": {
-    "Choisir la langue": "Choose language",
     "À propos": "About",
     "Compétences": "Skills",
     "Projets": "Projects",
@@ -246,7 +245,7 @@
     "meta[property='og:description']": { "content": "Explore my Angular/FHIR MPI and on-premise Medical RAG work: pure-Python BM25 indexing, sentence scoring and explainable extractive QA." },
     "meta[name='twitter:title']": { "content": "Sarah Tordeur | Full Stack & Medical AI" },
     "meta[name='twitter:description']": { "content": "Angular/FHIR MPI and local Medical RAG with a pure-Python BM25 index, SentenceScorer, NanoNN and sourced extractive QA." },
-    "#languageSelect": { "aria-label": "Choose language" },
+    ".language-switcher": { "aria-label": "Choose language" },
     ".navbar": { "aria-label": "Main navigation" },
     ".nav-logo": { "aria-label": "Sarah Tordeur - Home" },
     "#navToggle": { "aria-label": "Menu" },

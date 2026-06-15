@@ -30,7 +30,7 @@ Site public : [https://sarahtordeur.dev](https://sarahtordeur.dev)
 ### Internationalisation
 
 - interface disponible en français et en anglais ;
-- sélecteur `FR / EN` dans la barre de navigation ;
+- bouton segmenté `FR / EN` dans la barre de navigation ;
 - catalogues JSON séparés dans `locales/` ;
 - traduction des textes, métadonnées SEO, attributs `aria-label`, textes alternatifs et placeholders ;
 - langue sélectionnée enregistrée dans `localStorage` sous la clé `portfolio-language` ;
@@ -68,7 +68,8 @@ Portefolio/
 │   └── mobertaimont/
 ├── locales/
 │   ├── en.json
-│   └── fr.json
+│   ├── fr.json
+│   └── translations.js
 ├── index.html
 ├── style.css
 ├── script.js
@@ -131,11 +132,13 @@ Au démarrage :
 1. les nœuds textuels du document sont parcourus avec `TreeWalker` ;
 2. leur valeur française originale est conservée dans un `WeakMap` ;
 3. la langue sauvegardée dans `localStorage` est lue ;
-4. le fichier `locales/fr.json` ou `locales/en.json` est chargé avec `fetch()` ;
+4. le catalogue embarqué `locales/translations.js`, généré depuis les JSON, est chargé immédiatement ;
 5. les textes et attributs sont remplacés sans reconstruire le DOM ;
 6. l'attribut `lang` de l'élément `<html>` et le titre du document sont actualisés.
 
-Un identifiant de requête empêche une réponse réseau plus lente de remplacer une langue sélectionnée plus récemment.
+Les fichiers JSON restent les sources de référence. Si le bundle embarqué n'est pas disponible, le moteur tente de charger `locales/fr.json` ou `locales/en.json` avec `fetch()`. Cette double stratégie permet au bouton de fonctionner sur un serveur HTTP comme lors d'une ouverture locale en `file://`.
+
+Un identifiant de requête empêche une réponse réseau plus lente de remplacer une langue sélectionnée plus récemment. Les accès à `localStorage` sont protégés afin que les restrictions du navigateur ne bloquent pas le reste du JavaScript.
 
 ### Structure d'un catalogue
 
@@ -164,6 +167,12 @@ La section `text` utilise le texte français normalisé comme clé. La section `
 4. Pour un attribut, ajouter le sélecteur dans `attributes`.
 5. Vérifier que la clé ne contient pas d'espaces ou de retours à la ligne différents du texte normalisé.
 6. Servir le site via HTTP et tester les deux langues.
+
+Après une modification des catalogues JSON, régénérer le bundle embarqué :
+
+```bash
+ruby -rjson -e 'fr=JSON.parse(File.read("locales/fr.json")); en=JSON.parse(File.read("locales/en.json")); File.write("locales/translations.js", "window.PORTFOLIO_TRANSLATIONS = #{JSON.generate({fr: fr, en: en})};\n")'
+```
 
 Le fichier `locales/fr.json` contient principalement les versions françaises des métadonnées et attributs. Le contenu français visible reste directement présent dans `index.html`.
 
@@ -300,7 +309,7 @@ Ouvrir ensuite :
 http://localhost:8000
 ```
 
-Il ne faut pas ouvrir directement `index.html` avec une URL `file://`. Les catalogues de traduction sont chargés avec `fetch()` et nécessitent donc un serveur HTTP.
+Un serveur HTTP reste recommandé pour reproduire les conditions de production. Grâce au bundle `locales/translations.js`, le changement de langue fonctionne aussi lors d'une ouverture directe en `file://`.
 
 ## Configuration du formulaire
 
