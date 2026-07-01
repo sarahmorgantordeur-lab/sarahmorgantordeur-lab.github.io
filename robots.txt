@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sarahtordeur.dev/sitemap.xml
+Sitemap: https://sarahmorgantordeur-lab.github.io/sitemap.xml

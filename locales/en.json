@@ -35,56 +35,46 @@
     "Santé, données & IA": "Healthcare, Data & AI",
     "Mes": "My",
     "projets": "projects",
-    "Stage en cours": "Internship in progress",
     "Iderys · Mons · 18 mai au 29 juin 2026": "Iderys · Mons · May 18 to June 29, 2026",
     "Conception du frontend d'un": "Frontend development of a",
     "pour identifier et traiter les doublons de dossiers patients. L'application Angular communique avec une API": "to identify and process duplicate patient records. The Angular application communicates with an",
     ", manipule des ressources": ", handles typed",
     "typées et accompagne l'opérateur de la comparaison jusqu'à la fusion ou au rejet.": "resources and guides the operator from comparison through to merging or rejection.",
     "Interface MPI": "MPI interface",
-    "Authentification, dashboard, listes paginées, revue des doublons, traductions et design responsive.": "Authentication, dashboard, paginated lists, duplicate review, translations and responsive design.",
+    "Authentification, dashboard, listes paginées, revue des doublons, agenda filtré par praticien, filtres actif/inactif et design responsive multilingue (FR/EN/NL/DE).": "Authentication, dashboard, paginated lists, duplicate review, practitioner-filtered agenda, active/inactive filters and multilingual responsive design (FR/EN/NL/DE).",
     "Données FHIR": "FHIR data",
-    "CRUD patient et consultation des allergies, conditions, observations, rendez-vous et médicaments.": "Patient CRUD and access to allergies, conditions, observations, appointments and medications.",
+    ": création, édition et suppression des patients et de toutes leurs ressources cliniques : conditions ICD-10, allergies, observations, rendez-vous, médicaments SNOMED CT.": ": create, edit and delete patients and all their clinical resources: ICD-10 conditions, allergies, observations, appointments and SNOMED CT medications.",
+    "Gouvernance & intégrité": "Governance & integrity",
+    "Fusion champ par champ avec historique des valeurs conservées, défusion tracée (restauration FHIR + gestion HTTP 409), AuditEvent FHIR sur chaque décision et historique consultable par proposition ou par patient.": "Field-level merge with history of retained values, traceable unmerge (FHIR restoration + HTTP 409 handling), FHIR AuditEvent on every decision and audit trail queryable by proposal or patient.",
     "Recherche & IA": "Search & AI",
-    "Chatbot contextuel, recherche vectorielle IRIS, similarité sémantique et scoring des doublons.": "Contextual chatbot, IRIS vector search, semantic similarity and duplicate scoring.",
-    "Qualité": "Quality",
-    "Architecture lazy-loaded, typage FHIR, gestion globale des erreurs et tests d'API avec Bruno.": "Lazy-loaded architecture, FHIR typing, global error handling and API testing with Bruno.",
+    "Chatbot contextuel, recherche vectorielle IRIS, similarité sémantique, scoring des doublons et recherche floue (Fuse.js) étendue aux sources de fusion.": "Contextual chatbot, IRIS vector search, semantic similarity, duplicate scoring and fuzzy search (Fuse.js) extended to merge source records.",
+    "Qualité & CI": "Quality & CI",
+    "Architecture lazy-loaded, typage FHIR R4 strict, gestion globale des erreurs, tests automatisés Bruno (56 req. · 187 tests) et workflow GitHub Actions.": "Lazy-loaded architecture, strict FHIR R4 typing, global error handling, automated Bruno tests (56 req. · 187 tests) and a GitHub Actions workflow.",
     "Captures réelles du projet": "Real project screenshots",
     "Tableau de bord - navigation multilingue (FR/EN/NL/DE)": "Dashboard - multilingual navigation (FR/EN/NL/DE)",
-    "Liste des patients - tri, pagination et actions": "Patient list - sorting, pagination and actions",
-    "Fiche patient - données FHIR et ressources liées": "Patient record - FHIR data and related resources",
-    "Conditions médicales - diagnostics FHIR avec statut et vérification": "Medical conditions - FHIR diagnoses with status and verification",
-    "Formulaire édition patient - version néerlandaise": "Patient edit form - Dutch version",
-    "Formulaire création patient - version allemande": "Patient creation form - German version",
-    "Doublons patients - liste avec filtre par statut et score de similarité": "Patient duplicates - status filtering and similarity score",
-    "Évaluation d'un doublon - comparaison et décision de fusion": "Duplicate review - comparison and merge decision",
     "Doublon évalué - historique de la décision (validateur, date, commentaire)": "Reviewed duplicate - decision history, reviewer, date and comment",
-    "Agenda des rendez-vous - tri, pagination et actions": "Appointment calendar - sorting, pagination and actions",
-    "Captures extraites de l'analyse technique et du suivi journalier du stage, datés de mai et juin 2026.": "Screenshots taken from the technical analysis and daily internship log in May and June 2026.",
-    "Avancées prévues": "Planned improvements",
-    "À implémenter": "To implement",
     "Fusion sans troisième dossier": "Merge without creating a third record",
-    "Conserver un patient survivant et enrichir directement son dossier avec les valeurs choisies.": "Keep one surviving patient and directly enrich that record with the selected values.",
-    "Choix précis des données": "Field-level data selection",
-    "Sélectionner la meilleure valeur pour chaque champ et contrôler les doublons dans les ressources liées.": "Select the best value for each field and detect duplicates in related resources.",
-    "Démerge traçable": "Traceable unmerge",
-    "Restaurer le dossier archivé depuis l'historique, sans perte d'information, avec retour arrière possible.": "Restore the archived record from history without data loss and with rollback support.",
-    "Gestion de conflit": "Conflict management",
-    "Protection des modifications": "Change protection",
-    "Bloquer le démerge si le patient a changé depuis la fusion (HTTP 409), avec confirmation explicite pour forcer.": "Block unmerge when the patient record changed after merging (HTTP 409), with explicit confirmation to override.",
+    "Fusionner deux patients quelconques depuis l'interface, sans passer par une proposition automatique.": "Merge any two patients from the interface without going through an automatic proposal.",
+    "Blocking phonétique": "Phonetic blocking",
+    "Détecter les doublons « Dupont »/« Dupond » grâce à une clé Soundex2 ou un blocking multi-axes (DDN + NISS).": "Detect duplicates like 'Dupont'/'Dupond' using a Soundex2 key or multi-axis blocking (DOB + national ID).",
+    "Scoring de l'adresse et des identifiants": "Address and identifier scoring",
+    "Pondérer l'adresse et le numéro national dans le score de similarité, des signaux forts actuellement ignorés.": "Weight the address and national identifier in the similarity score, strong signals currently ignored.",
     "Idée": "Idea",
     "Filtres sur les ressources FHIR": "FHIR resource filters",
     "Rechercher et filtrer les conditions, allergies et observations directement depuis la fiche patient.": "Search and filter conditions, allergies and observations directly from the patient record.",
-    "Gestion des ressources liées": "Related resource management",
-    "Créer, modifier et supprimer des conditions, rendez-vous et médications depuis l'interface patient.": "Create, update and delete conditions, appointments and medications from the patient interface.",
     "Mai - juin 2026": "May - June 2026",
     "Initiative personnelle": "Personal initiative",
     "Recherche & développement menée pendant le stage chez Iderys": "Research and development conducted during my internship at Iderys",
     "Medical RAG avec BM25 pur Python - QA médicale locale": "Medical RAG with pure-Python BM25 - local medical QA",
     "Conception autonome d'un pipeline de": "Independent design of a",
     "pour interroger des documents médicaux en français. Le système prétraite et anonymise les sources, construit un": "pipeline for querying French medical documents. The system preprocesses and anonymizes sources, builds a",
+    "pour interroger des documents médicaux en français. Le système indexe le catalogue": "for querying French medical documents. The system indexes the",
+    "(7 302 médicaments belges) et des publications": "catalogue (7,302 Belgian medications) and",
+    "(66 articles, 2004–2025) dans un": "publications (66 articles, 2004–2025) in a",
     "index BM25 en Python standard": "BM25 index using the Python standard library",
+    "index BM25 Python pur": "pure-Python BM25 index",
     ", classe les passages selon leur pertinence lexicale, puis produit une réponse extractive sourcée avec": ", ranks passages by lexical relevance, then produces a sourced extractive answer using",
+    ", puis produit une réponse extractive sourcée via": ", then produces a sourced extractive answer via",
     ". L'architecture est pensée pour un fonctionnement": ". The architecture is designed for",
     ", sans sortie des données sensibles.": ", keeping sensitive data within the local environment.",
     "AI pipeline · 100 % local": "AI pipeline · 100% local",
@@ -92,6 +82,8 @@
     "Sources": "Sources",
     "Documents": "Documents",
     "Publications": "Publications",
+    "7 302 médicaments": "7,302 medications",
+    "66 publications": "66 publications",
     "Indexation lexicale": "Lexical indexing",
     "Index pur Python · stdlib": "Pure-Python index · stdlib",
     "Index inversé": "Inverted index",
@@ -122,7 +114,8 @@
     "Signaux lexicaux et structurels explicables": "Explainable lexical and structural signals",
     "Formats indexés": "Indexed formats",
     "TXT, PDF prétraités et ressources FHIR": "TXT, preprocessed PDF and FHIR resources",
-    "Les anciennes métriques du pipeline vectoriel ne sont plus affichées : le nouvel index BM25 devra être réévalué séparément.": "Metrics from the former vector pipeline are no longer displayed: the new BM25 index must be evaluated separately.",
+    "Corpus indexé": "Indexed corpus",
+    "AFMPS 7 302 médic. · PubMed 66 publ. scientifiques": "AFMPS 7,302 meds · PubMed 66 scientific publ.",
     "Concepts mathématiques mobilisés": "Mathematical concepts",
     "Score BM25": "BM25 score",
     "score(q,d) = Σ IDF(t) · TF normalisé(t,d)": "score(q,d) = Σ IDF(t) · normalized TF(t,d)",
@@ -141,6 +134,10 @@
     "Ingénierie & contraintes santé": "Engineering & healthcare constraints",
     "Index BM25 pur Python": "Pure-Python BM25 index",
     "construit sur un index inversé, sans NumPy, PyTorch, Transformers ni FAISS.": "built on an inverted index without NumPy, PyTorch, Transformers or FAISS.",
+    "Corpus AFMPS": "AFMPS corpus",
+    ": 7 302 médicaments belges et 66 publications scientifiques (2004–2025) ; 196 PMIDs PubMed via scraping.": ": 7,302 Belgian medications and 66 scientific publications (2004–2025); 196 PubMed PMIDs via scraping.",
+    "Scheduler périodique": "Periodic scheduler",
+    ": mise à jour hebdomadaire (AFMPS) et mensuelle (PubMed) avec réindexation automatique.": ": weekly updates (AFMPS) and monthly (PubMed) with automatic re-indexing.",
     "Recherche lexicale explicable": "Explainable lexical retrieval",
     "fondée sur la fréquence des termes, leur rareté et la normalisation de longueur.": "based on term frequency, rarity and length normalization.",
     "QA extractive explicable": "Explainable extractive QA",
@@ -210,13 +207,9 @@
     "\"statut\"": "\"status\"",
     "\"en cours\"": "\"in progress\"",
     "\"réalisations\"": "\"achievements\"",
-    "\"CRUD de ressources FHIR R4\"": "\"FHIR R4 resource CRUD\"",
     "\"Chatbot contextuel + recherche vectorielle\"": "\"Contextual chatbot + vector search\"",
     "\"Scoring sémantique des doublons\"": "\"Semantic duplicate scoring\"",
     "\"FHIR-athon - profils belges\"": "\"FHIR-athon - Belgian profiles\"",
-    "\"prochaines_etapes\"": "\"next_steps\"",
-    "\"Fusion avec choix des données\"": "\"Merge with field-level data selection\"",
-    "\"Démerge avec historique et conflit 409\"": "\"Unmerge with history and 409 conflict handling\"",
     "f\"Stage chez {stage['entreprise']} ({stage['lieu']}) \"": "f\"Internship at {stage['company']} ({stage['location']}) \"",
     "f\"du {stage['debut']} au {stage['fin']}\"": "f\"from {stage['start']} to {stage['end']}\"",
     "Me": "Contact",
@@ -235,45 +228,138 @@
     "Je vous répondrai dès que possible.": "I will reply as soon as possible.",
     "Erreur d'envoi": "Sending failed",
     "Veuillez réessayer ou m'écrire directement.": "Please try again or email me directly.",
-    "© 2026 Sarah Tordeur. Tous droits réservés.": "© 2026 Sarah Tordeur. All rights reserved."
+    "© 2026 Sarah Tordeur. Tous droits réservés.": "© 2026 Sarah Tordeur. All rights reserved.",
+    "Stage terminé": "Internship completed",
+    "Liste des patients - statut de fusion visible directement dans le tableau": "Patient list - merge status visible directly in the table",
+    "Fiche patient fusionné - historique et défusion tracée": "Merged patient record - history and traceable unmerge",
+    "Formulaire d'édition d'un patient": "Patient edit form",
+    "Formulaire de création d'un patient": "Patient creation form",
+    "Doublons patients - filtre par statut et score de similarité": "Patient duplicates - status filter and similarity score",
+    "Évaluation d'un doublon - sélection champ par champ de la valeur à conserver": "Duplicate review - field-by-field selection of the value to keep",
+    "Agenda des rendez-vous - vue semaine par praticien": "Appointment calendar - week view by practitioner",
+    "Assistant MPI - chatbot médical avec réponses sourcées (RAG)": "MPI Assistant - medical chatbot with sourced answers (RAG)",
+    "Captures de l'application finalisée, extraites du rapport de fin de stage (juin 2026).": "Screenshots of the finished application, taken from the end-of-internship report (June 2026).",
+    "Pistes d'évolution": "Future directions",
+    "Piste future": "Future direction",
+    "\"terminé\"": "\"completed\"",
+    "\"CRUD complet de ressources FHIR R4\"": "\"Full FHIR R4 resource CRUD\"",
+    "\"Fusion champ par champ avec historique\"": "\"Field-level merge with history\"",
+    "\"Défusion tracée (AuditEvent + conflit 409)\"": "\"Traceable unmerge (AuditEvent + 409 conflict)\"",
+    "\"pistes_evolution\"": "\"future_directions\"",
+    "\"Fusion sans troisième dossier\"": "\"Merge without a third record\"",
+    "\"Blocking phonétique (Soundex)\"": "\"Phonetic blocking (Soundex)\""
   },
   "attributes": {
     "meta[name='description']": {
-      "content": "Sarah Tordeur's portfolio: Angular/FHIR MPI at Iderys and a local Medical RAG pipeline using a pure-Python BM25 index, NanoNN and extractive QA."
+      "content": "Sarah Tordeur's portfolio: Angular/FHIR MPI built during an internship at Iderys, full FHIR R4 CRUD, field-level merge, traceable unmerge, AuditEvent, RAG chatbot, Bruno CI. Local Medical RAG pipeline with pure-Python BM25, NanoNN and extractive QA."
     },
-    "meta[property='og:title']": { "content": "Sarah Tordeur | Full Stack & Medical AI" },
-    "meta[property='og:description']": { "content": "Explore my Angular/FHIR MPI and on-premise Medical RAG work: pure-Python BM25 indexing, sentence scoring and explainable extractive QA." },
-    "meta[name='twitter:title']": { "content": "Sarah Tordeur | Full Stack & Medical AI" },
-    "meta[name='twitter:description']": { "content": "Angular/FHIR MPI and local Medical RAG with a pure-Python BM25 index, SentenceScorer, NanoNN and sourced extractive QA." },
-    ".language-switcher": { "aria-label": "Choose language" },
-    ".navbar": { "aria-label": "Main navigation" },
-    ".nav-logo": { "aria-label": "Sarah Tordeur - Home" },
-    "#navToggle": { "aria-label": "Menu" },
-    "#about": { "aria-label": "About me" },
-    "#skills": { "aria-label": "Technical skills" },
-    "#projects": { "aria-label": "Completed projects" },
-    ".stage-highlights": { "aria-label": "Internship achievements" },
-    ".stage-roadmap": { "aria-label": "Planned improvements" },
-    ".ai-lab": { "aria-label": "Visual architecture of the Medical RAG artificial intelligence pipeline" },
-    ".rag-results": { "aria-label": "Medical RAG technical characteristics" },
-    "#education": { "aria-label": "Education and background" },
-    "#contactForm": { "aria-label": "Contact form" },
-    "#name": { "placeholder": "John Smith" },
-    "#email": { "placeholder": "john@example.com" },
-    "#subject": { "placeholder": "Job opportunity, collaboration..." },
-    "#message": { "placeholder": "Hello Sarah, I would like to..." },
-    ".project-link-icon": { "title": "Visit website" },
-    "#modal": { "aria-label": "Image viewer" },
-    "#modalClose": { "aria-label": "Close" },
-    "#modalPrev": { "aria-label": "Previous image" },
-    "#modalNext": { "aria-label": "Next image" },
-    "img[src='assets/iderys_mpi/mpi-tableau-de-bord-multilingue.webp']": { "alt": "MPI dashboard with the language selector open" },
-    "img[src='assets/iderys_mpi/mpi-liste-patients.webp']": { "alt": "Patient list with sorting, pagination and CRUD actions" },
-    "img[src='assets/iderys_mpi/mpi-fiche-patient.webp']": { "alt": "Detailed patient record with medical resources" },
-    "img[src='assets/iderys_mpi/mpi-conditions-patient.webp']": { "alt": "Patient medical conditions" },
-    "img[src='assets/iderys_mpi/mpi-doublons-liste.webp']": { "alt": "List of duplicate patient records" },
-    "img[src='assets/iderys_mpi/mpi-doublon-evaluer.webp']": { "alt": "Review and comparison of a duplicate patient record" },
-    "img[src='assets/iderys_mpi/mpi-doublon-evalue.webp']": { "alt": "Decision history for a reviewed duplicate patient record" },
-    "img[src='assets/iderys_mpi/mpi-agenda.webp']": { "alt": "Appointment calendar" }
+    "meta[property='og:title']": {
+      "content": "Sarah Tordeur | Full Stack & Medical AI"
+    },
+    "meta[property='og:description']": {
+      "content": "Angular/FHIR MPI built during an internship at Iderys: full FHIR R4 CRUD, traceable unmerge, AuditEvent, RAG chatbot, Bruno CI. On-premise Medical RAG with pure-Python BM25 and extractive QA."
+    },
+    "meta[name='twitter:title']": {
+      "content": "Sarah Tordeur | Full Stack & Medical AI"
+    },
+    "meta[name='twitter:description']": {
+      "content": "Angular/FHIR MPI built during an internship at Iderys: FHIR R4 CRUD, unmerge, AuditEvent, RAG chatbot, Bruno CI. Local Medical RAG: pure-Python BM25, NanoNN and extractive QA."
+    },
+    ".language-switcher": {
+      "aria-label": "Choose language"
+    },
+    ".navbar": {
+      "aria-label": "Main navigation"
+    },
+    ".nav-logo": {
+      "aria-label": "Sarah Tordeur - Home"
+    },
+    "#navToggle": {
+      "aria-label": "Menu"
+    },
+    "#about": {
+      "aria-label": "About me"
+    },
+    "#skills": {
+      "aria-label": "Technical skills"
+    },
+    "#projects": {
+      "aria-label": "Completed projects"
+    },
+    ".stage-highlights": {
+      "aria-label": "Internship achievements"
+    },
+    ".stage-roadmap": {
+      "aria-label": "Possible future directions"
+    },
+    ".ai-lab": {
+      "aria-label": "Visual architecture of the Medical RAG artificial intelligence pipeline"
+    },
+    ".rag-results": {
+      "aria-label": "Medical RAG technical characteristics"
+    },
+    "#education": {
+      "aria-label": "Education and background"
+    },
+    "#contactForm": {
+      "aria-label": "Contact form"
+    },
+    "#name": {
+      "placeholder": "John Smith"
+    },
+    "#email": {
+      "placeholder": "john@example.com"
+    },
+    "#subject": {
+      "placeholder": "Job opportunity, collaboration..."
+    },
+    "#message": {
+      "placeholder": "Hello Sarah, I would like to..."
+    },
+    ".project-link-icon": {
+      "title": "Visit website"
+    },
+    "#modal": {
+      "aria-label": "Image viewer"
+    },
+    "#modalClose": {
+      "aria-label": "Close"
+    },
+    "#modalPrev": {
+      "aria-label": "Previous image"
+    },
+    "#modalNext": {
+      "aria-label": "Next image"
+    },
+    "img[src='assets/iderys_mpi/mpi-tableau-de-bord-multilingue.webp']": {
+      "alt": "MPI dashboard with the language selector open (FR, EN, NL) and Agenda / Patients / Duplicates navigation"
+    },
+    "img[src='assets/iderys_mpi/mpi-liste-patients.webp']": {
+      "alt": "Patient list with a Merged badge on a processed record, sorting and pagination"
+    },
+    "img[src='assets/iderys_mpi/mpi-fiche-patient.webp']": {
+      "alt": "Modal of a merged patient with an Unmerge button and merge history"
+    },
+    "img[src='assets/iderys_mpi/mpi-doublons-liste.webp']": {
+      "alt": "List of duplicate patient records with the status filter menu open (pending, auto-merged, manually merged, rejected, unmerged)"
+    },
+    "img[src='assets/iderys_mpi/mpi-doublon-evaluer.webp']": {
+      "alt": "Duplicate review modal with individual field selection and highlighted differences"
+    },
+    "img[src='assets/iderys_mpi/mpi-doublon-evalue.webp']": {
+      "alt": "Modal of an automatically merged duplicate with date, reviewer and similarity score"
+    },
+    "img[src='assets/iderys_mpi/mpi-agenda.webp']": {
+      "alt": "Weekly agenda view with appointments placed by time slot"
+    },
+    "img[src='assets/iderys_mpi/mpi-formulaire-edition-patient.webp']": {
+      "alt": "Patient edit form with FHIR fields (identity, contact, address)"
+    },
+    "img[src='assets/iderys_mpi/mpi-formulaire-creation-patient.webp']": {
+      "alt": "New patient creation form with a native date picker"
+    },
+    "img[src='assets/iderys_mpi/mpi-assistant-mpi-chatbot.webp']": {
+      "alt": "Conversation with the MPI Assistant answering a question about a patient's allergies, with a cited source"
+    }
   }
 }
