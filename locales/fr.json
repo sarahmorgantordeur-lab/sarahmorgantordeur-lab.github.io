@@ -4,49 +4,115 @@
   "text": {},
   "attributes": {
     "meta[name='description']": {
-      "content": "Portfolio de Sarah Tordeur : MPI Angular/FHIR chez Iderys et Medical RAG local avec index BM25 pur Python, NanoNN et QA extractive explicable."
+      "content": "Portfolio de Sarah Tordeur : MPI Angular/FHIR développé durant un stage chez Iderys, CRUD FHIR R4 complet, fusion champ par champ, défusion tracée, AuditEvent, chatbot RAG, CI Bruno. Medical RAG local BM25 pur Python, NanoNN et QA extractive."
     },
     "meta[property='og:title']": {
       "content": "Sarah Tordeur | Full Stack & IA médicale"
     },
     "meta[property='og:description']": {
-      "content": "Découvrez mon MPI Angular/FHIR et mon Medical RAG on-premise : index BM25 pur Python, scoring de phrases et QA extractive explicable."
+      "content": "MPI Angular/FHIR développé durant un stage chez Iderys : CRUD FHIR R4 complet, défusion tracée, AuditEvent, chatbot RAG, CI Bruno. Medical RAG on-premise BM25 pur Python, QA extractive."
     },
     "meta[name='twitter:title']": {
       "content": "Sarah Tordeur | Full Stack & IA médicale"
     },
     "meta[name='twitter:description']": {
-      "content": "MPI Angular/FHIR et Medical RAG local : index BM25 pur Python, SentenceScorer, NanoNN et QA extractive sourcée."
+      "content": "MPI Angular/FHIR développé durant un stage chez Iderys : CRUD FHIR R4, défusion, AuditEvent, chatbot RAG, CI Bruno. Medical RAG local : BM25 pur Python, NanoNN et QA extractive."
     },
-    ".language-switcher": { "aria-label": "Choisir la langue" },
-    ".navbar": { "aria-label": "Navigation principale" },
-    ".nav-logo": { "aria-label": "Sarah Tordeur - Accueil" },
-    "#navToggle": { "aria-label": "Menu" },
-    "#about": { "aria-label": "À propos de moi" },
-    "#skills": { "aria-label": "Compétences techniques" },
-    "#projects": { "aria-label": "Projets réalisés" },
-    ".stage-highlights": { "aria-label": "Avancées réalisées pendant le stage" },
-    ".stage-roadmap": { "aria-label": "Avancées prévues" },
-    ".ai-lab": { "aria-label": "Architecture visuelle du pipeline d'intelligence artificielle Medical RAG" },
-    ".rag-results": { "aria-label": "Caractéristiques techniques du Medical RAG" },
-    "#education": { "aria-label": "Parcours et formations" },
-    "#contactForm": { "aria-label": "Formulaire de contact" },
-    "#name": { "placeholder": "Jean Dupont" },
-    "#email": { "placeholder": "jean@exemple.com" },
-    "#subject": { "placeholder": "Proposition de poste, collaboration..." },
-    "#message": { "placeholder": "Bonjour Sarah, je souhaite..." },
-    ".project-link-icon": { "title": "Voir le site" },
-    "#modal": { "aria-label": "Visionneuse d'images" },
-    "#modalClose": { "aria-label": "Fermer" },
-    "#modalPrev": { "aria-label": "Image précédente" },
-    "#modalNext": { "aria-label": "Image suivante" },
-    "img[src='assets/iderys_mpi/mpi-tableau-de-bord-multilingue.webp']": { "alt": "Tableau de bord MPI avec sélecteur de langue ouvert" },
-    "img[src='assets/iderys_mpi/mpi-liste-patients.webp']": { "alt": "Liste des patients avec tri, pagination et actions CRUD" },
-    "img[src='assets/iderys_mpi/mpi-fiche-patient.webp']": { "alt": "Fiche détaillée d'un patient avec ses ressources médicales" },
-    "img[src='assets/iderys_mpi/mpi-conditions-patient.webp']": { "alt": "Conditions médicales d'un patient" },
-    "img[src='assets/iderys_mpi/mpi-doublons-liste.webp']": { "alt": "Liste des dossiers patients en double" },
-    "img[src='assets/iderys_mpi/mpi-doublon-evaluer.webp']": { "alt": "Évaluation et comparaison d'un doublon patient" },
-    "img[src='assets/iderys_mpi/mpi-doublon-evalue.webp']": { "alt": "Historique d'un doublon patient évalué" },
-    "img[src='assets/iderys_mpi/mpi-agenda.webp']": { "alt": "Agenda des rendez-vous" }
+    ".language-switcher": {
+      "aria-label": "Choisir la langue"
+    },
+    ".navbar": {
+      "aria-label": "Navigation principale"
+    },
+    ".nav-logo": {
+      "aria-label": "Sarah Tordeur - Accueil"
+    },
+    "#navToggle": {
+      "aria-label": "Menu"
+    },
+    "#about": {
+      "aria-label": "À propos de moi"
+    },
+    "#skills": {
+      "aria-label": "Compétences techniques"
+    },
+    "#projects": {
+      "aria-label": "Projets réalisés"
+    },
+    ".stage-highlights": {
+      "aria-label": "Avancées réalisées pendant le stage"
+    },
+    ".stage-roadmap": {
+      "aria-label": "Pistes d'évolution possibles"
+    },
+    ".ai-lab": {
+      "aria-label": "Architecture visuelle du pipeline d'intelligence artificielle Medical RAG"
+    },
+    ".rag-results": {
+      "aria-label": "Caractéristiques techniques du Medical RAG"
+    },
+    "#education": {
+      "aria-label": "Parcours et formations"
+    },
+    "#contactForm": {
+      "aria-label": "Formulaire de contact"
+    },
+    "#name": {
+      "placeholder": "Jean Dupont"
+    },
+    "#email": {
+      "placeholder": "jean@exemple.com"
+    },
+    "#subject": {
+      "placeholder": "Proposition de poste, collaboration..."
+    },
+    "#message": {
+      "placeholder": "Bonjour Sarah, je souhaite..."
+    },
+    ".project-link-icon": {
+      "title": "Voir le site"
+    },
+    "#modal": {
+      "aria-label": "Visionneuse d'images"
+    },
+    "#modalClose": {
+      "aria-label": "Fermer"
+    },
+    "#modalPrev": {
+      "aria-label": "Image précédente"
+    },
+    "#modalNext": {
+      "aria-label": "Image suivante"
+    },
+    "img[src='assets/iderys_mpi/mpi-tableau-de-bord-multilingue.webp']": {
+      "alt": "MPI dashboard with the language selector open (FR, EN, NL) and Agenda / Patients / Duplicates navigation"
+    },
+    "img[src='assets/iderys_mpi/mpi-liste-patients.webp']": {
+      "alt": "Patient list with a Merged badge on a processed record, sorting and pagination"
+    },
+    "img[src='assets/iderys_mpi/mpi-fiche-patient.webp']": {
+      "alt": "Modal of a merged patient with an Unmerge button and merge history"
+    },
+    "img[src='assets/iderys_mpi/mpi-doublons-liste.webp']": {
+      "alt": "List of duplicate patient records with the status filter menu open (pending, auto-merged, manually merged, rejected, unmerged)"
+    },
+    "img[src='assets/iderys_mpi/mpi-doublon-evaluer.webp']": {
+      "alt": "Duplicate review modal with individual field selection and highlighted differences"
+    },
+    "img[src='assets/iderys_mpi/mpi-doublon-evalue.webp']": {
+      "alt": "Modal of an automatically merged duplicate with date, reviewer and similarity score"
+    },
+    "img[src='assets/iderys_mpi/mpi-agenda.webp']": {
+      "alt": "Weekly agenda view with appointments placed by time slot"
+    },
+    "img[src='assets/iderys_mpi/mpi-formulaire-edition-patient.webp']": {
+      "alt": "Patient edit form with FHIR fields (identity, contact, address)"
+    },
+    "img[src='assets/iderys_mpi/mpi-formulaire-creation-patient.webp']": {
+      "alt": "New patient creation form with a native date picker"
+    },
+    "img[src='assets/iderys_mpi/mpi-assistant-mpi-chatbot.webp']": {
+      "alt": "Conversation with the MPI Assistant answering a question about a patient's allergies, with a cited source"
+    }
   }
 }
