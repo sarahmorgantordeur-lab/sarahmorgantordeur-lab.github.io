@@ -586,6 +586,7 @@ img {
     display: flex;
     flex-direction: column;
     position: relative;
+    min-width: 0;
 }
 
 .project-card:hover {
@@ -1325,6 +1326,7 @@ img {
 /* Zone mockups */
 .project-mockups {
     margin: 1.25rem 0;
+    min-width: 0;
 }
 
 /* Galerie scrollable horizontalement */
@@ -1337,6 +1339,7 @@ img {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
     scrollbar-color: var(--accent) var(--bg-card);
+    min-width: 0;
 }
 
 .mockup-gallery::-webkit-scrollbar {
